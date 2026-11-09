@@ -1,0 +1,48 @@
+# Every threshold in the platform. Code reads these through claimsafe.settings.
+
+[claims]
+register_file = "data/claims/register.yaml"
+paraphrases = "data/claims/paraphrases.yaml"   # wordings compliance has approved as equivalent
+min_rewrite_similarity = 0.45                   # below this an unauthorised health claim is blocked, not rewritten
+
+[catalog]
+seed = 7
+
+[search]
+k = 5
+lsa_components = 48
+hybrid_weight_dense = 0.5
+
+[advisor]
+max_products = 3
+llm_model = "claude-sonnet-5-5"   # LLMDrafter only; its drafts pass the checker like any other
+llm_max_tokens = 300
+llm_timeout_s = 30
+
+[replenish]
+seed = 11
+customers = 6000
+months = 20
+train_months = 12             # months 1..12 train, 13.. are the live replay
+reminder_lead_days = 5        # a reminder goes out this many days before the predicted run-out
+on_time_window_days = 7       # a reminder counts as on time if the reorder falls within this many days after it
+lgbm_rounds = 300
+lgbm_learning_rate = 0.05
+lgbm_num_leaves = 31
+
+[monitoring]
+psi_alert = 0.2               # population stability index above which a feature alerts
+mae_degradation_alert = 0.25  # live MAE this much worse (relative) than the release MAE triggers retraining
+rollback_degradation = 0.5    # a new release this much worse than the previous champion is rolled back
+min_labels_for_decision = 300
+drift_months_before_retrain = 2   # feature drift for this many months in a row triggers a retrain candidate
+
+[gate]
+min_mae_improvement = 0.05    # a challenger must beat the champion's MAE by this share on the same holdout
+
+[gdpr]
+pseudonym_key_env = "CLAIMSAFE_PSEUDONYM_KEY"
+retrain_after_erasure_days = 30   # models trained on erased customers are retrained within this many days
+
+[store]
+root = "var"

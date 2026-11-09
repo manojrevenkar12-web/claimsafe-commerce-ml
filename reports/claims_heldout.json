@@ -1,0 +1,101 @@
+{
+ "set": "heldout",
+ "items": 70,
+ "not_allowed": 33,
+ "allowed": 37,
+ "accuracy": 0.8571,
+ "accuracy_ci95": [
+  0.7566,
+  0.9205
+ ],
+ "false_passes": 10,
+ "false_pass_rate": 0.303,
+ "false_pass_rate_ci95": [
+  0.1738,
+  0.4734
+ ],
+ "false_flags": 0,
+ "false_flag_rate": 0.0,
+ "false_flag_rate_ci95": [
+  0.0,
+  0.0941
+ ],
+ "errors": [
+  {
+   "product": "P05",
+   "text": "Calms your nerves after a long day.",
+   "allowed": false,
+   "verdict": "ok",
+   "reasons": []
+  },
+  {
+   "product": "P16",
+   "text": "Stops hair loss in weeks.",
+   "allowed": false,
+   "verdict": "ok",
+   "reasons": []
+  },
+  {
+   "product": "P17",
+   "text": "Protects your baby from birth defects.",
+   "allowed": false,
+   "verdict": "ok",
+   "reasons": []
+  },
+  {
+   "product": "P25",
+   "text": "Covers your daily needs so you never get sick.",
+   "allowed": false,
+   "verdict": "ok",
+   "reasons": []
+  },
+  {
+   "product": "P27",
+   "text": "Glow from within.",
+   "allowed": false,
+   "verdict": "ok",
+   "reasons": []
+  },
+  {
+   "product": "P32",
+   "text": "Cleanses your liver.",
+   "allowed": false,
+   "verdict": "ok",
+   "reasons": []
+  },
+  {
+   "product": "P34",
+   "text": "Smooth skin and fewer wrinkles in 8 weeks.",
+   "allowed": false,
+   "verdict": "ok",
+   "reasons": []
+  },
+  {
+   "product": "P35",
+   "text": "Lavender helps you fall asleep faster.",
+   "allowed": false,
+   "verdict": "ok",
+   "reasons": []
+  },
+  {
+   "product": "P38",
+   "text": "Everything mum and baby need.",
+   "allowed": false,
+   "verdict": "ok",
+   "reasons": []
+  },
+  {
+   "product": "P40",
+   "text": "Sharpens memory and focus.",
+   "allowed": false,
+   "verdict": "ok",
+   "reasons": []
+  }
+ ],
+ "verdicts": {
+  "ok": 47,
+  "rewrite": 6,
+  "block": 17
+ },
+ "run_once": true
+}

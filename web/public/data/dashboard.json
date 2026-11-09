@@ -1,0 +1,1725 @@
+{
+ "claims": {
+  "catalogue": {
+   "blocked": 17,
+   "products": 40,
+   "rewrite_only": 5,
+   "with_findings": 22,
+   "without_any_eligible_claim": 12
+  },
+  "catalogue_rows": [
+   {
+    "eligible_claims": 7,
+    "findings": [],
+    "name": "Vitamin D3 1000 IU drops",
+    "product": "P01",
+    "safe_text": "Vegan vitamin D3 from lichen in MCT oil. Vitamin D contributes to the normal function of the immune system.",
+    "sentences": [
+     {
+      "text": "Vegan vitamin D3 from lichen in MCT oil.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Vitamin D contributes to the normal function of the immune system.",
+      "verdict": "ok"
+     }
+    ],
+    "verdict": "ok"
+   },
+   {
+    "eligible_claims": 9,
+    "findings": [
+     {
+      "reason": "health claim not in authorised wording",
+      "sentence": "The duo for strong bones.",
+      "suggestion": "Vitamin D contributes to the maintenance of normal bones. Vitamin K contributes to the maintenance of normal bones.",
+      "verdict": "rewrite"
+     },
+     {
+      "reason": "health claim not in authorised wording",
+      "sentence": "Vitamin D3 and K2 work together so calcium ends up in your bones, not your arteries.",
+      "suggestion": "Vitamin D contributes to the maintenance of normal bones.",
+      "verdict": "rewrite"
+     }
+    ],
+    "name": "Vitamin D3 + K2 drops",
+    "product": "P02",
+    "safe_text": "Vitamin D contributes to the maintenance of normal bones. Vitamin K contributes to the maintenance of normal bones. Vitamin D contributes to the maintenance of normal bones.",
+    "sentences": [
+     {
+      "text": "The duo for strong bones.",
+      "verdict": "rewrite"
+     },
+     {
+      "text": "Vitamin D3 and K2 work together so calcium ends up in your bones, not your arteries.",
+      "verdict": "rewrite"
+     }
+    ],
+    "verdict": "rewrite"
+   },
+   {
+    "eligible_claims": 7,
+    "findings": [
+     {
+      "reason": "health claim not in authorised wording",
+      "sentence": "Supports healthy growth and strong teeth.",
+      "suggestion": "Vitamin D contributes to the maintenance of normal teeth.",
+      "verdict": "rewrite"
+     }
+    ],
+    "name": "Vitamin D3 200 IU kids drops",
+    "product": "P03",
+    "safe_text": "Gentle dose for children. Vitamin D contributes to the maintenance of normal teeth.",
+    "sentences": [
+     {
+      "text": "Gentle dose for children.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Supports healthy growth and strong teeth.",
+      "verdict": "rewrite"
+     }
+    ],
+    "verdict": "rewrite"
+   },
+   {
+    "eligible_claims": 0,
+    "findings": [
+     {
+      "reason": "closest authorised claim does not apply to this product: Vitamin D: 0.5 µg per daily dose is 10% of the NRV; a claim needs at least 15% (0.75 µg)",
+      "sentence": "Strengthens your immune system through the winter.",
+      "suggestion": null,
+      "verdict": "block"
+     }
+    ],
+    "name": "Vitamin D3 400 IU low dose",
+    "product": "P04",
+    "safe_text": "A low daily dose for everyone who gets some sun.",
+    "sentences": [
+     {
+      "text": "A low daily dose for everyone who gets some sun.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Strengthens your immune system through the winter.",
+      "verdict": "block"
+     }
+    ],
+    "verdict": "block"
+   },
+   {
+    "eligible_claims": 10,
+    "findings": [],
+    "name": "Magnesium bisglycinate 300 mg",
+    "product": "P05",
+    "safe_text": "Highly bioavailable chelate. Magnesium contributes to a reduction of tiredness and fatigue.",
+    "sentences": [
+     {
+      "text": "Highly bioavailable chelate.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Magnesium contributes to a reduction of tiredness and fatigue.",
+      "verdict": "ok"
+     }
+    ],
+    "verdict": "ok"
+   },
+   {
+    "eligible_claims": 10,
+    "findings": [
+     {
+      "reason": "medicinal claim: names cramps; food may not claim to prevent, treat or cure a disease (Reg. (EU) 1169/2011 Art. 7(3))",
+      "sentence": "Relieves muscle cramps after sport and helps you sleep through the night.",
+      "suggestion": null,
+      "verdict": "block"
+     }
+    ],
+    "name": "Magnesium citrate powder",
+    "product": "P06",
+    "safe_text": "Fizzy lemon drink.",
+    "sentences": [
+     {
+      "text": "Fizzy lemon drink.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Relieves muscle cramps after sport and helps you sleep through the night.",
+      "verdict": "block"
+     }
+    ],
+    "verdict": "block"
+   },
+   {
+    "eligible_claims": 0,
+    "findings": [
+     {
+      "reason": "no authorised claim for this product matches this wording",
+      "sentence": "Fights tiredness naturally.",
+      "suggestion": null,
+      "verdict": "block"
+     }
+    ],
+    "name": "Magnesium trace drink",
+    "product": "P07",
+    "safe_text": "A light mineral drink with a hint of magnesium.",
+    "sentences": [
+     {
+      "text": "A light mineral drink with a hint of magnesium.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Fights tiredness naturally.",
+      "verdict": "block"
+     }
+    ],
+    "verdict": "block"
+   },
+   {
+    "eligible_claims": 15,
+    "findings": [],
+    "name": "Vitamin C buffered 500 mg",
+    "product": "P08",
+    "safe_text": "Gentle on the stomach. Vitamin C contributes to normal collagen formation for the normal function of skin.",
+    "sentences": [
+     {
+      "text": "Gentle on the stomach.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Vitamin C contributes to normal collagen formation for the normal function of skin.",
+      "verdict": "ok"
+     }
+    ],
+    "verdict": "ok"
+   },
+   {
+    "eligible_claims": 14,
+    "findings": [
+     {
+      "reason": "medicinal claim: names colds, flu; food may not claim to prevent, treat or cure a disease (Reg. (EU) 1169/2011 Art. 7(3))",
+      "sentence": "Protects you from colds and flu.",
+      "suggestion": null,
+      "verdict": "block"
+     }
+    ],
+    "name": "Acerola vitamin C powder",
+    "product": "P09",
+    "safe_text": "Natural vitamin C from acerola cherries.",
+    "sentences": [
+     {
+      "text": "Natural vitamin C from acerola cherries.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Protects you from colds and flu.",
+      "verdict": "block"
+     }
+    ],
+    "verdict": "block"
+   },
+   {
+    "eligible_claims": 8,
+    "findings": [],
+    "name": "Vitamin B12 methylcobalamin 500 µg",
+    "product": "P10",
+    "safe_text": "Active B12 for vegans. Vitamin B12 contributes to the reduction of tiredness and fatigue.",
+    "sentences": [
+     {
+      "text": "Active B12 for vegans.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Vitamin B12 contributes to the reduction of tiredness and fatigue.",
+      "verdict": "ok"
+     }
+    ],
+    "verdict": "ok"
+   },
+   {
+    "eligible_claims": 8,
+    "findings": [
+     {
+      "reason": "medicinal claim: names anaemia, deficiency; food may not claim to prevent, treat or cure a disease (Reg. (EU) 1169/2011 Art. 7(3))",
+      "sentence": "Boosts your energy and cures B12 deficiency anaemia.",
+      "suggestion": null,
+      "verdict": "block"
+     }
+    ],
+    "name": "B12 depot drops",
+    "product": "P11",
+    "safe_text": "",
+    "sentences": [
+     {
+      "text": "Boosts your energy and cures B12 deficiency anaemia.",
+      "verdict": "block"
+     }
+    ],
+    "verdict": "block"
+   },
+   {
+    "eligible_claims": 21,
+    "findings": [],
+    "name": "Iron bisglycinate 14 mg + vitamin C",
+    "product": "P12",
+    "safe_text": "Gentle iron with vitamin C. Iron contributes to normal formation of red blood cells and haemoglobin.",
+    "sentences": [
+     {
+      "text": "Gentle iron with vitamin C.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Iron contributes to normal formation of red blood cells and haemoglobin.",
+      "verdict": "ok"
+     }
+    ],
+    "verdict": "ok"
+   },
+   {
+    "eligible_claims": 18,
+    "findings": [
+     {
+      "reason": "medicinal claim: names acne; food may not claim to prevent, treat or cure a disease (Reg. (EU) 1169/2011 Art. 7(3))",
+      "sentence": "Great for clear skin and against acne.",
+      "suggestion": null,
+      "verdict": "block"
+     }
+    ],
+    "name": "Zinc picolinate 10 mg",
+    "product": "P13",
+    "safe_text": "Zinc contributes to the normal function of the immune system.",
+    "sentences": [
+     {
+      "text": "Zinc contributes to the normal function of the immune system.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Great for clear skin and against acne.",
+      "verdict": "block"
+     }
+    ],
+    "verdict": "block"
+   },
+   {
+    "eligible_claims": 0,
+    "findings": [
+     {
+      "reason": "closest authorised claim does not apply to this product: Zinc: 1 mg per daily dose is 10% of the NRV; a claim needs at least 15% (1.5 mg)",
+      "sentence": "A small daily zinc top-up for healthy hair and nails.",
+      "suggestion": null,
+      "verdict": "block"
+     }
+    ],
+    "name": "Zinc 1 mg micro dose",
+    "product": "P14",
+    "safe_text": "",
+    "sentences": [
+     {
+      "text": "A small daily zinc top-up for healthy hair and nails.",
+      "verdict": "block"
+     }
+    ],
+    "verdict": "block"
+   },
+   {
+    "eligible_claims": 6,
+    "findings": [],
+    "name": "Selenium 55 µg",
+    "product": "P15",
+    "safe_text": "Selenium contributes to the normal thyroid function.",
+    "sentences": [
+     {
+      "text": "Selenium contributes to the normal thyroid function.",
+      "verdict": "ok"
+     }
+    ],
+    "verdict": "ok"
+   },
+   {
+    "eligible_claims": 7,
+    "findings": [
+     {
+      "reason": "health claim not in authorised wording",
+      "sentence": "For full, shiny hair.",
+      "suggestion": "Biotin contributes to the maintenance of normal hair.",
+      "verdict": "rewrite"
+     }
+    ],
+    "name": "Biotin 5000 µg",
+    "product": "P16",
+    "safe_text": "Biotin contributes to the maintenance of normal hair. Biotin contributes to the maintenance of normal hair.",
+    "sentences": [
+     {
+      "text": "For full, shiny hair.",
+      "verdict": "rewrite"
+     },
+     {
+      "text": "Biotin contributes to the maintenance of normal hair.",
+      "verdict": "ok"
+     }
+    ],
+    "verdict": "rewrite"
+   },
+   {
+    "eligible_claims": 8,
+    "findings": [],
+    "name": "Folate 400 µg (methylfolate)",
+    "product": "P17",
+    "safe_text": "Folate contributes to maternal tissue growth during pregnancy.",
+    "sentences": [
+     {
+      "text": "Folate contributes to maternal tissue growth during pregnancy.",
+      "verdict": "ok"
+     }
+    ],
+    "verdict": "ok"
+   },
+   {
+    "eligible_claims": 8,
+    "findings": [
+     {
+      "reason": "medicinal claim: names osteoporosis; food may not claim to prevent, treat or cure a disease (Reg. (EU) 1169/2011 Art. 7(3))",
+      "sentence": "Prevents osteoporosis in later life.",
+      "suggestion": null,
+      "verdict": "block"
+     }
+    ],
+    "name": "Calcium from algae 400 mg",
+    "product": "P18",
+    "safe_text": "Calcium is needed for the maintenance of normal bones.",
+    "sentences": [
+     {
+      "text": "Calcium is needed for the maintenance of normal bones.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Prevents osteoporosis in later life.",
+      "verdict": "block"
+     }
+    ],
+    "verdict": "block"
+   },
+   {
+    "eligible_claims": 5,
+    "findings": [],
+    "name": "Iodine from kelp 150 µg",
+    "product": "P19",
+    "safe_text": "Iodine contributes to the normal production of thyroid hormones and normal thyroid function.",
+    "sentences": [
+     {
+      "text": "Iodine contributes to the normal production of thyroid hormones and normal thyroid function.",
+      "verdict": "ok"
+     }
+    ],
+    "verdict": "ok"
+   },
+   {
+    "eligible_claims": 2,
+    "findings": [],
+    "name": "Vitamin K2 MK-7 100 µg",
+    "product": "P20",
+    "safe_text": "Vitamin K contributes to the maintenance of normal bones.",
+    "sentences": [
+     {
+      "text": "Vitamin K contributes to the maintenance of normal bones.",
+      "verdict": "ok"
+     }
+    ],
+    "verdict": "ok"
+   },
+   {
+    "eligible_claims": 3,
+    "findings": [],
+    "name": "Omega-3 algae oil",
+    "product": "P21",
+    "safe_text": "Vegan omega-3 from algae. DHA contributes to maintenance of normal brain function. The beneficial effect is obtained with a daily intake of 250 mg of DHA.",
+    "sentences": [
+     {
+      "text": "Vegan omega-3 from algae.",
+      "verdict": "ok"
+     },
+     {
+      "text": "DHA contributes to maintenance of normal brain function.",
+      "verdict": "ok"
+     },
+     {
+      "text": "The beneficial effect is obtained with a daily intake of 250 mg of DHA.",
+      "verdict": "ok"
+     }
+    ],
+    "verdict": "ok"
+   },
+   {
+    "eligible_claims": 5,
+    "findings": [
+     {
+      "reason": "health claim not in authorised wording",
+      "sentence": "Lowers blood pressure and protects your heart.",
+      "suggestion": "EPA and DHA contribute to the normal function of the heart. The beneficial effect is obtained with a daily intake of 250 mg of EPA and DHA.",
+      "verdict": "rewrite"
+     }
+    ],
+    "name": "Omega-3 fish oil high dose",
+    "product": "P22",
+    "safe_text": "High-dose EPA and DHA. EPA and DHA contribute to the normal function of the heart. The beneficial effect is obtained with a daily intake of 250 mg of EPA and DHA.",
+    "sentences": [
+     {
+      "text": "High-dose EPA and DHA.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Lowers blood pressure and protects your heart.",
+      "verdict": "rewrite"
+     }
+    ],
+    "verdict": "rewrite"
+   },
+   {
+    "eligible_claims": 0,
+    "findings": [
+     {
+      "reason": "closest authorised claim does not apply to this product: DHA: 100 mg per daily dose; this claim needs 250 mg",
+      "sentence": "An everyday omega-3 for brain and eyes.",
+      "suggestion": null,
+      "verdict": "block"
+     }
+    ],
+    "name": "Omega-3 light",
+    "product": "P23",
+    "safe_text": "",
+    "sentences": [
+     {
+      "text": "An everyday omega-3 for brain and eyes.",
+      "verdict": "block"
+     }
+    ],
+    "verdict": "block"
+   },
+   {
+    "eligible_claims": 3,
+    "findings": [],
+    "name": "Kids omega-3 drops",
+    "product": "P24",
+    "safe_text": "DHA for growing minds.",
+    "sentences": [
+     {
+      "text": "DHA for growing minds.",
+      "verdict": "ok"
+     }
+    ],
+    "verdict": "ok"
+   },
+   {
+    "eligible_claims": 92,
+    "findings": [
+     {
+      "reason": "no authorised claim for this product matches this wording",
+      "sentence": "Your all-round protection.",
+      "suggestion": null,
+      "verdict": "block"
+     }
+    ],
+    "name": "Multivitamin complete",
+    "product": "P25",
+    "safe_text": "Everything you need in two capsules a day.",
+    "sentences": [
+     {
+      "text": "Everything you need in two capsules a day.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Your all-round protection.",
+      "verdict": "block"
+     }
+    ],
+    "verdict": "block"
+   },
+   {
+    "eligible_claims": 40,
+    "findings": [],
+    "name": "Immune complex C + zinc + D3",
+    "product": "P26",
+    "safe_text": "Vitamin C, zinc and vitamin D contribute to the normal function of the immune system.",
+    "sentences": [
+     {
+      "text": "Vitamin C, zinc and vitamin D contribute to the normal function of the immune system.",
+      "verdict": "ok"
+     }
+    ],
+    "verdict": "ok"
+   },
+   {
+    "eligible_claims": 45,
+    "findings": [
+     {
+      "reason": "health claim not in authorised wording",
+      "sentence": "Biotin, zinc and selenium for beautiful hair, skin and nails from within.",
+      "suggestion": "Selenium contributes to the maintenance of normal hair. Biotin contributes to the maintenance of normal hair. Zinc contributes to the maintenance of normal hair.",
+      "verdict": "rewrite"
+     },
+     {
+      "reason": "no authorised claim for this product matches this wording",
+      "sentence": "Anti-ageing from the inside.",
+      "suggestion": null,
+      "verdict": "block"
+     }
+    ],
+    "name": "Hair, skin and nails complex",
+    "product": "P27",
+    "safe_text": "Selenium contributes to the maintenance of normal hair. Biotin contributes to the maintenance of normal hair. Zinc contributes to the maintenance of normal hair.",
+    "sentences": [
+     {
+      "text": "Biotin, zinc and selenium for beautiful hair, skin and nails from within.",
+      "verdict": "rewrite"
+     },
+     {
+      "text": "Anti-ageing from the inside.",
+      "verdict": "block"
+     }
+    ],
+    "verdict": "block"
+   },
+   {
+    "eligible_claims": 0,
+    "findings": [
+     {
+      "reason": "no authorised health claim exists for adaptogen",
+      "sentence": "The adaptogen for stress.",
+      "suggestion": null,
+      "verdict": "block"
+     },
+     {
+      "reason": "medicinal claim: names anxiety; food may not claim to prevent, treat or cure a disease (Reg. (EU) 1169/2011 Art. 7(3))",
+      "sentence": "Ashwagandha lowers cortisol and reduces anxiety.",
+      "suggestion": null,
+      "verdict": "block"
+     }
+    ],
+    "name": "Ashwagandha KSM-66 600 mg",
+    "product": "P28",
+    "safe_text": "",
+    "sentences": [
+     {
+      "text": "The adaptogen for stress.",
+      "verdict": "block"
+     },
+     {
+      "text": "Ashwagandha lowers cortisol and reduces anxiety.",
+      "verdict": "block"
+     }
+    ],
+    "verdict": "block"
+   },
+   {
+    "eligible_claims": 0,
+    "findings": [
+     {
+      "reason": "medicinal claim: names inflammation, pain; food may not claim to prevent, treat or cure a disease (Reg. (EU) 1169/2011 Art. 7(3))",
+      "sentence": "Curcumin fights inflammation and soothes joint pain.",
+      "suggestion": null,
+      "verdict": "block"
+     }
+    ],
+    "name": "Turmeric extract with black pepper",
+    "product": "P29",
+    "safe_text": "",
+    "sentences": [
+     {
+      "text": "Curcumin fights inflammation and soothes joint pain.",
+      "verdict": "block"
+     }
+    ],
+    "verdict": "block"
+   },
+   {
+    "eligible_claims": 0,
+    "findings": [],
+    "name": "Ceremonial matcha",
+    "product": "P30",
+    "safe_text": "Shade-grown matcha from Japan. Calm focus in a cup.",
+    "sentences": [
+     {
+      "text": "Shade-grown matcha from Japan.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Calm focus in a cup.",
+      "verdict": "ok"
+     }
+    ],
+    "verdict": "ok"
+   },
+   {
+    "eligible_claims": 0,
+    "findings": [
+     {
+      "reason": "medicinal claim: names insomnia; food may not claim to prevent, treat or cure a disease (Reg. (EU) 1169/2011 Art. 7(3))",
+      "sentence": "A calming cup before bed that helps against insomnia.",
+      "suggestion": null,
+      "verdict": "block"
+     }
+    ],
+    "name": "Organic chamomile tea",
+    "product": "P31",
+    "safe_text": "Mild, golden chamomile blossoms.",
+    "sentences": [
+     {
+      "text": "Mild, golden chamomile blossoms.",
+      "verdict": "ok"
+     },
+     {
+      "text": "A calming cup before bed that helps against insomnia.",
+      "verdict": "block"
+     }
+    ],
+    "verdict": "block"
+   },
+   {
+    "eligible_claims": 0,
+    "findings": [
+     {
+      "reason": "no authorised claim for this product matches this wording",
+      "sentence": "Detoxes your body.",
+      "suggestion": null,
+      "verdict": "block"
+     }
+    ],
+    "name": "Spirulina tablets",
+    "product": "P32",
+    "safe_text": "Green superfood full of protein.",
+    "sentences": [
+     {
+      "text": "Green superfood full of protein.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Detoxes your body.",
+      "verdict": "block"
+     }
+    ],
+    "verdict": "block"
+   },
+   {
+    "eligible_claims": 0,
+    "findings": [],
+    "name": "Pea protein vanilla",
+    "product": "P33",
+    "safe_text": "21 g plant protein per serving, sweetened with stevia.",
+    "sentences": [
+     {
+      "text": "21 g plant protein per serving, sweetened with stevia.",
+      "verdict": "ok"
+     }
+    ],
+    "verdict": "ok"
+   },
+   {
+    "eligible_claims": 14,
+    "findings": [],
+    "name": "Collagen peptides",
+    "product": "P34",
+    "safe_text": "Bioactive collagen peptides with vitamin C. Vitamin C contributes to normal collagen formation for the normal function of skin.",
+    "sentences": [
+     {
+      "text": "Bioactive collagen peptides with vitamin C.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Vitamin C contributes to normal collagen formation for the normal function of skin.",
+      "verdict": "ok"
+     }
+    ],
+    "verdict": "ok"
+   },
+   {
+    "eligible_claims": 0,
+    "findings": [],
+    "name": "Melatonin-free sleep drops",
+    "product": "P35",
+    "safe_text": "Lavender and lemon balm for a peaceful evening.",
+    "sentences": [
+     {
+      "text": "Lavender and lemon balm for a peaceful evening.",
+      "verdict": "ok"
+     }
+    ],
+    "verdict": "ok"
+   },
+   {
+    "eligible_claims": 28,
+    "findings": [],
+    "name": "Electrolyte sport drink",
+    "product": "P36",
+    "safe_text": "Magnesium contributes to electrolyte balance. Mix one scoop in 500 ml of water.",
+    "sentences": [
+     {
+      "text": "Magnesium contributes to electrolyte balance.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Mix one scoop in 500 ml of water.",
+      "verdict": "ok"
+     }
+    ],
+    "verdict": "ok"
+   },
+   {
+    "eligible_claims": 15,
+    "findings": [],
+    "name": "Vitamin C 1000 mg sport",
+    "product": "P37",
+    "safe_text": "Vitamin C contributes to maintain the normal function of the immune system during and after intense physical exercise.",
+    "sentences": [
+     {
+      "text": "Vitamin C contributes to maintain the normal function of the immune system during and after intense physical exercise.",
+      "verdict": "ok"
+     }
+    ],
+    "verdict": "ok"
+   },
+   {
+    "eligible_claims": 27,
+    "findings": [
+     {
+      "reason": "no authorised claim for Vitamin D, Folate, Iodine, Iron matches this wording",
+      "sentence": "Made for pregnancy: folate, iodine, vitamin D and iron.",
+      "suggestion": null,
+      "verdict": "block"
+     }
+    ],
+    "name": "Prenatal complex",
+    "product": "P38",
+    "safe_text": "Folate contributes to maternal tissue growth during pregnancy.",
+    "sentences": [
+     {
+      "text": "Made for pregnancy: folate, iodine, vitamin D and iron.",
+      "verdict": "block"
+     },
+     {
+      "text": "Folate contributes to maternal tissue growth during pregnancy.",
+      "verdict": "ok"
+     }
+    ],
+    "verdict": "block"
+   },
+   {
+    "eligible_claims": 10,
+    "findings": [
+     {
+      "reason": "required statement missing",
+      "sentence": "EPA and DHA contribute to the normal function of the heart.",
+      "suggestion": "EPA and DHA contribute to the normal function of the heart. The beneficial effect is obtained with a daily intake of 250 mg of EPA and DHA.",
+      "verdict": "rewrite"
+     }
+    ],
+    "name": "Cod liver oil",
+    "product": "P39",
+    "safe_text": "Traditional cod liver oil. EPA and DHA contribute to the normal function of the heart. The beneficial effect is obtained with a daily intake of 250 mg of EPA and DHA.",
+    "sentences": [
+     {
+      "text": "Traditional cod liver oil.",
+      "verdict": "ok"
+     },
+     {
+      "text": "EPA and DHA contribute to the normal function of the heart.",
+      "verdict": "rewrite"
+     }
+    ],
+    "verdict": "rewrite"
+   },
+   {
+    "eligible_claims": 0,
+    "findings": [
+     {
+      "reason": "no authorised health claim exists for mushroom",
+      "sentence": "Medicinal mushroom for memory and focus.",
+      "suggestion": null,
+      "verdict": "block"
+     },
+     {
+      "reason": "no authorised claim for this product matches this wording",
+      "sentence": "Clinically shown to improve cognition.",
+      "suggestion": null,
+      "verdict": "block"
+     }
+    ],
+    "name": "Lion's mane mushroom extract",
+    "product": "P40",
+    "safe_text": "",
+    "sentences": [
+     {
+      "text": "Medicinal mushroom for memory and focus.",
+      "verdict": "block"
+     },
+     {
+      "text": "Clinically shown to improve cognition.",
+      "verdict": "block"
+     }
+    ],
+    "verdict": "block"
+   }
+  ],
+  "dev": {
+   "accuracy": 1.0,
+   "accuracy_ci95": [
+    0.9324,
+    1.0
+   ],
+   "allowed": 28,
+   "false_flags": 0,
+   "false_passes": 0,
+   "items": 53,
+   "not_allowed": 25
+  },
+  "examples": [
+   {
+    "answers": [
+     {
+      "name": "Collagen peptides",
+      "product": "P34",
+      "text": "Collagen peptides: 1 powder a day; one pack lasts 30 days, 39.90 EUR. Vitamin C contributes to the reduction of tiredness and fatigue.",
+      "verdict": "ok"
+     },
+     {
+      "name": "Acerola vitamin C powder",
+      "product": "P09",
+      "text": "Acerola vitamin C powder: 1 powder a day; one pack lasts 100 days, 19.90 EUR. Vitamin C contributes to the reduction of tiredness and fatigue.",
+      "verdict": "ok"
+     },
+     {
+      "name": "Iron bisglycinate 14 mg + vitamin C",
+      "product": "P12",
+      "text": "Iron bisglycinate 14 mg + vitamin C: 1 capsules a day; one pack lasts 120 days, 14.90 EUR. Vitamin C contributes to the reduction of tiredness and fatigue. Iron contributes to the reduction of tiredness and fatigue.",
+      "verdict": "ok"
+     }
+    ],
+    "q": "something for when I'm always tired"
+   },
+   {
+    "answers": [
+     {
+      "name": "Omega-3 algae oil",
+      "product": "P21",
+      "text": "Omega-3 algae oil: 2 capsules a day; one pack lasts 60 days, 29.90 EUR. EPA and DHA contribute to the normal function of the heart. The beneficial effect is obtained with a daily intake of 250 mg of EPA and DHA.",
+      "verdict": "ok"
+     },
+     {
+      "name": "Kids omega-3 drops",
+      "product": "P24",
+      "text": "Kids omega-3 drops: 1 drops a day; one pack lasts 100 days, 19.90 EUR. EPA and DHA contribute to the normal function of the heart. The beneficial effect is obtained with a daily intake of 250 mg of EPA and DHA.",
+      "verdict": "ok"
+     },
+     {
+      "name": "Omega-3 fish oil high dose",
+      "product": "P22",
+      "text": "Omega-3 fish oil high dose: 4 capsules a day; one pack lasts 30 days, 34.90 EUR. EPA and DHA contribute to the normal function of the heart. The beneficial effect is obtained with a daily intake of 250 mg of EPA and DHA.",
+      "verdict": "ok"
+     }
+    ],
+    "q": "omega 3 for my heart"
+   },
+   {
+    "answers": [
+     {
+      "name": "Folate 400 µg (methylfolate)",
+      "product": "P17",
+      "text": "Folate 400 µg (methylfolate): 1 capsules a day; one pack lasts 120 days, 15.90 EUR. Folate contributes to maternal tissue growth during pregnancy.",
+      "verdict": "ok"
+     },
+     {
+      "name": "Prenatal complex",
+      "product": "P38",
+      "text": "Prenatal complex: 1 capsules a day; one pack lasts 90 days, 26.90 EUR. Folate contributes to maternal tissue growth during pregnancy.",
+      "verdict": "ok"
+     },
+     {
+      "name": "Multivitamin complete",
+      "product": "P25",
+      "text": "Multivitamin complete: 2 capsules a day; one pack lasts 60 days, 27.90 EUR. Folate contributes to maternal tissue growth during pregnancy.",
+      "verdict": "ok"
+     }
+    ],
+    "q": "I'm pregnant, what should I take"
+   }
+  ],
+  "guard": [
+   {
+    "answers_shown": 88,
+    "blocked": 40,
+    "embellish_rate": 0.2,
+    "made_up_sentences": 50,
+    "reached_customer": 0,
+    "rewritten": 10,
+    "sentences_checked": 236
+   },
+   {
+    "answers_shown": 88,
+    "blocked": 74,
+    "embellish_rate": 0.5,
+    "made_up_sentences": 104,
+    "reached_customer": 0,
+    "rewritten": 30,
+    "sentences_checked": 259
+   },
+   {
+    "answers_shown": 88,
+    "blocked": 114,
+    "embellish_rate": 0.8,
+    "made_up_sentences": 159,
+    "reached_customer": 0,
+    "rewritten": 45,
+    "sentences_checked": 268
+   }
+  ],
+  "heldout": {
+   "accuracy": 0.8571,
+   "accuracy_ci95": [
+    0.7566,
+    0.9205
+   ],
+   "allowed": 37,
+   "false_flag_rate_ci95": [
+    0.0,
+    0.0941
+   ],
+   "false_flags": 0,
+   "false_pass_rate_ci95": [
+    0.1738,
+    0.4734
+   ],
+   "false_passes": 10,
+   "items": 70,
+   "not_allowed": 33
+  },
+  "heldout_misses": [
+   {
+    "product": "P05",
+    "text": "Calms your nerves after a long day."
+   },
+   {
+    "product": "P16",
+    "text": "Stops hair loss in weeks."
+   },
+   {
+    "product": "P17",
+    "text": "Protects your baby from birth defects."
+   },
+   {
+    "product": "P25",
+    "text": "Covers your daily needs so you never get sick."
+   },
+   {
+    "product": "P27",
+    "text": "Glow from within."
+   },
+   {
+    "product": "P32",
+    "text": "Cleanses your liver."
+   },
+   {
+    "product": "P34",
+    "text": "Smooth skin and fewer wrinkles in 8 weeks."
+   },
+   {
+    "product": "P35",
+    "text": "Lavender helps you fall asleep faster."
+   },
+   {
+    "product": "P38",
+    "text": "Everything mum and baby need."
+   },
+   {
+    "product": "P40",
+    "text": "Sharpens memory and focus."
+   }
+  ],
+  "register": {
+   "claims": 106,
+   "nutrients": 14,
+   "source": "https://www.legislation.gov.uk/eur/2012/432/annex (Commission Regulation (EU) No 432/2012, Annex)"
+  },
+  "search": {
+   "k": 5,
+   "methods": {
+    "claims": {
+     "precision_at_k": 0.8,
+     "recall_at_k": 0.84,
+     "results_without_a_lawful_claim_for_the_need": 0.18
+    },
+    "hybrid": {
+     "precision_at_k": 0.8,
+     "recall_at_k": 0.84,
+     "results_without_a_lawful_claim_for_the_need": 0.2
+    },
+    "marketing": {
+     "precision_at_k": 0.4467,
+     "recall_at_k": 0.4744,
+     "results_without_a_lawful_claim_for_the_need": 0.4361
+    }
+   },
+   "queries": 30
+  }
+ },
+ "gdpr": {
+  "after_delete": [
+   {
+    "features": 0,
+    "identities": 0,
+    "model_manifests": [],
+    "orders": 0,
+    "personalisation_index": 0
+   },
+   {
+    "features": 0,
+    "identities": 0,
+    "model_manifests": [
+     1
+    ],
+    "orders": 0,
+    "personalisation_index": 0
+   },
+   {
+    "features": 0,
+    "identities": 0,
+    "model_manifests": [],
+    "orders": 0,
+    "personalisation_index": 0
+   }
+  ],
+  "after_retrain": [
+   {
+    "features": 0,
+    "identities": 0,
+    "model_manifests": [],
+    "orders": 0,
+    "personalisation_index": 0
+   },
+   {
+    "features": 0,
+    "identities": 0,
+    "model_manifests": [],
+    "orders": 0,
+    "personalisation_index": 0
+   },
+   {
+    "features": 0,
+    "identities": 0,
+    "model_manifests": [],
+    "orders": 0,
+    "personalisation_index": 0
+   }
+  ],
+  "deleted": [
+   {
+    "features": 28,
+    "identities": 1,
+    "orders": 28,
+    "personalisation_index": 1
+   },
+   {
+    "features": 2,
+    "identities": 1,
+    "orders": 2,
+    "personalisation_index": 1
+   },
+   {
+    "features": 2,
+    "identities": 1,
+    "orders": 2,
+    "personalisation_index": 1
+   }
+  ],
+  "erased_customers": 3,
+  "purged_versions": [
+   1
+  ],
+  "retrain_due_day": 430,
+  "seconds": 0.7
+ },
+ "pipeline": {
+  "bigquery_sql": "pipelines/features.bigquery.sql",
+  "lineage": {
+   "edges": [
+    [
+     "orders",
+     "features"
+    ],
+    [
+     "features",
+     "training_set"
+    ],
+    [
+     "training_set",
+     "model"
+    ],
+    [
+     "model",
+     "gate"
+    ],
+    [
+     "register",
+     "claims_index"
+    ],
+    [
+     "catalogue",
+     "claims_index"
+    ],
+    [
+     "register",
+     "checker"
+    ],
+    [
+     "catalogue",
+     "checker"
+    ],
+    [
+     "catalogue",
+     "orders"
+    ]
+   ],
+   "nodes": [
+    {
+     "hash": "5155a1d604c9a48e",
+     "id": "register",
+     "kind": "source",
+     "label": "EU claim register (432/2012)"
+    },
+    {
+     "hash": "44c55fe0ba6bdb2c",
+     "id": "catalogue",
+     "kind": "source",
+     "label": "Product catalogue"
+    },
+    {
+     "hash": "7cdf157a8381eb8f",
+     "id": "orders",
+     "kind": "dataset",
+     "label": "Orders (35,752 rows)"
+    },
+    {
+     "hash": "6ab6d747cdf55932",
+     "id": "features",
+     "kind": "dataset",
+     "label": "Features (23,795 labelled)"
+    },
+    {
+     "hash": "83ec479fb947366e",
+     "id": "training_set",
+     "kind": "dataset",
+     "label": "Training set (7,445 rows)"
+    },
+    {
+     "hash": "85c748feced2ccad",
+     "id": "model",
+     "kind": "model",
+     "label": "Run-out model"
+    },
+    {
+     "hash": "",
+     "id": "gate",
+     "kind": "check",
+     "label": "Gate: passed"
+    },
+    {
+     "hash": "",
+     "id": "claims_index",
+     "kind": "index",
+     "label": "Claims search index"
+    },
+    {
+     "hash": "9e284ddae1dee85f",
+     "id": "checker",
+     "kind": "check",
+     "label": "Claim checker"
+    }
+   ]
+  },
+  "prefect_run": {
+   "evaluate": {
+    "challenger": {
+     "mae_days": 8.161,
+     "n": 1549,
+     "reminders_on_time": 0.3518,
+     "reminders_too_late": 0.0394,
+     "within_7_days": 0.643
+    },
+    "rule": {
+     "mae_days": 11.246,
+     "n": 1549,
+     "reminders_on_time": 0.3241,
+     "reminders_too_late": 0.1679,
+     "within_7_days": 0.5629
+    }
+   },
+   "features": {
+    "labelled": 23795,
+    "rows": 35752
+   },
+   "orders": {
+    "fingerprint": "7cdf157a8381eb8f",
+    "rows": 35752
+   },
+   "passed_gate": true,
+   "train": {
+    "data_fingerprint": "83ec479fb947366e",
+    "trained_on": 7445
+   }
+  },
+  "vertex_spec": "pipelines/replenishment.yaml"
+ },
+ "replenishment": {
+  "events": [
+   {
+    "day": 360,
+    "detail": "champion: MAE 8.161 vs 11.246 for the pack-size rule",
+    "event": "registered",
+    "version": 1
+   },
+   {
+    "day": 480,
+    "detail": "challenger: retrain (drift in channel for 2 months); holdout MAE 7.2 vs champion 10.0",
+    "event": "registered",
+    "version": 2
+   },
+   {
+    "day": 480,
+    "detail": "passed the gate",
+    "event": "promoted",
+    "version": 2
+   },
+   {
+    "day": 480,
+    "detail": "challenger: hotfix release that skipped the gate",
+    "event": "registered",
+    "version": 3
+   },
+   {
+    "day": 480,
+    "detail": "deployed without the gate (rehearsal of a bad release)",
+    "event": "promoted",
+    "version": 3
+   },
+   {
+    "day": 540,
+    "detail": "live error 4.84x the rule's vs 0.57x for v2 at release; champion is v2 again",
+    "event": "rolled back",
+    "version": 3
+   },
+   {
+    "day": 540,
+    "detail": "challenger: retrain (drift in channel, last_ratio for 2 months); holdout MAE 8.2 vs champion 10.0",
+    "event": "registered",
+    "version": 4
+   },
+   {
+    "day": 540,
+    "detail": "passed the gate",
+    "event": "promoted",
+    "version": 4
+   },
+   {
+    "day": 600,
+    "detail": "challenger: retrain (drift in channel, last_ratio, customer_mean_ratio for 2 months); holdout MAE 10.2 vs champion 13.9",
+    "event": "registered",
+    "version": 5
+   },
+   {
+    "day": 600,
+    "detail": "passed the gate",
+    "event": "promoted",
+    "version": 5
+   }
+  ],
+  "months": [
+   {
+    "actions": [],
+    "champion": 1,
+    "live": {
+     "by_version": {
+      "1": {
+       "mae_days": 0.935,
+       "n": 26,
+       "skill": 0.1802
+      }
+     },
+     "mae_days": 0.935,
+     "n": 26,
+     "rule_mae_days": 5.192,
+     "skill": 0.1801
+    },
+    "month": 13,
+    "orders": 2320,
+    "psi": {
+     "channel": 0.0017,
+     "customer_mean_ratio": 0.0131,
+     "last_ratio": 0.0178,
+     "qty": 0.0,
+     "subscriber": 0.0,
+     "supply_days": 0.0033
+    },
+    "psi_alerts": []
+   },
+   {
+    "actions": [],
+    "champion": 1,
+    "live": {
+     "by_version": {
+      "1": {
+       "mae_days": 2.347,
+       "n": 441,
+       "skill": 0.4222
+      }
+     },
+     "mae_days": 2.347,
+     "n": 441,
+     "rule_mae_days": 5.56,
+     "skill": 0.4221
+    },
+    "month": 14,
+    "orders": 2443,
+    "psi": {
+     "channel": 0.0023,
+     "customer_mean_ratio": 0.0188,
+     "last_ratio": 0.0111,
+     "qty": 0.0,
+     "subscriber": 0.0,
+     "supply_days": 0.0024
+    },
+    "psi_alerts": []
+   },
+   {
+    "actions": [],
+    "champion": 1,
+    "live": {
+     "by_version": {
+      "1": {
+       "mae_days": 3.252,
+       "n": 1004,
+       "skill": 0.4755
+      }
+     },
+     "mae_days": 3.252,
+     "n": 1004,
+     "rule_mae_days": 6.839,
+     "skill": 0.4755
+    },
+    "month": 15,
+    "orders": 2552,
+    "psi": {
+     "channel": 0.6663,
+     "customer_mean_ratio": 0.0172,
+     "last_ratio": 0.0103,
+     "qty": 0.0,
+     "subscriber": 0.0,
+     "supply_days": 0.0012
+    },
+    "psi_alerts": [
+     "channel"
+    ]
+   },
+   {
+    "actions": [
+     "retrained: v2 promoted (holdout MAE 7.2 vs 10.0)"
+    ],
+    "champion": 2,
+    "live": {
+     "by_version": {
+      "1": {
+       "mae_days": 4.053,
+       "n": 1316,
+       "skill": 0.4497
+      }
+     },
+     "mae_days": 4.053,
+     "n": 1316,
+     "rule_mae_days": 9.013,
+     "skill": 0.4497
+    },
+    "month": 16,
+    "orders": 2583,
+    "psi": {
+     "channel": 0.9992,
+     "customer_mean_ratio": 0.0137,
+     "last_ratio": 0.0228,
+     "qty": 0.0,
+     "subscriber": 0.0,
+     "supply_days": 0.0037
+    },
+    "psi_alerts": [
+     "channel"
+    ]
+   },
+   {
+    "actions": [
+     "v3 deployed without the gate"
+    ],
+    "champion": 3,
+    "live": {
+     "by_version": {
+      "1": {
+       "mae_days": 5.918,
+       "n": 1532,
+       "skill": 0.5086
+      },
+      "3": {
+       "mae_days": 40.921,
+       "n": 33,
+       "skill": 7.544
+      }
+     },
+     "mae_days": 6.656,
+     "n": 1565,
+     "rule_mae_days": 11.504,
+     "skill": 0.5786
+    },
+    "month": 17,
+    "orders": 2574,
+    "psi": {
+     "channel": 1.1777,
+     "customer_mean_ratio": 0.0453,
+     "last_ratio": 0.0839,
+     "qty": 0.0,
+     "subscriber": 0.0,
+     "supply_days": 0.0065
+    },
+    "psi_alerts": [
+     "channel"
+    ]
+   },
+   {
+    "actions": [
+     "rolled back v3 to v2",
+     "retrained: v4 promoted (holdout MAE 8.2 vs 10.0)"
+    ],
+    "champion": 4,
+    "live": {
+     "by_version": {
+      "1": {
+       "mae_days": 9.446,
+       "n": 1320,
+       "skill": 0.5656
+      },
+      "3": {
+       "mae_days": 33.992,
+       "n": 348,
+       "skill": 4.8401
+      }
+     },
+     "mae_days": 14.567,
+     "n": 1668,
+     "rule_mae_days": 14.683,
+     "skill": 0.9921
+    },
+    "month": 18,
+    "orders": 2512,
+    "psi": {
+     "channel": 1.3044,
+     "customer_mean_ratio": 0.0659,
+     "last_ratio": 0.2126,
+     "qty": 0.0,
+     "subscriber": 0.0,
+     "supply_days": 0.0022
+    },
+    "psi_alerts": [
+     "channel",
+     "last_ratio"
+    ]
+   },
+   {
+    "actions": [],
+    "champion": 4,
+    "live": {
+     "by_version": {
+      "1": {
+       "mae_days": 15.689,
+       "n": 926,
+       "skill": 0.642
+      },
+      "3": {
+       "mae_days": 22.958,
+       "n": 745,
+       "skill": 2.3131
+      },
+      "4": {
+       "mae_days": 1.137,
+       "n": 37,
+       "skill": 0.2179
+      }
+     },
+     "mae_days": 18.544,
+     "n": 1708,
+     "rule_mae_days": 17.69,
+     "skill": 1.0483
+    },
+    "month": 19,
+    "orders": 2328,
+    "psi": {
+     "channel": 1.3664,
+     "customer_mean_ratio": 0.172,
+     "last_ratio": 0.4041,
+     "qty": 0.0,
+     "subscriber": 0.0,
+     "supply_days": 0.0034
+    },
+    "psi_alerts": [
+     "channel",
+     "last_ratio"
+    ]
+   },
+   {
+    "actions": [
+     "retrained: v5 promoted (holdout MAE 10.2 vs 13.9)"
+    ],
+    "champion": 5,
+    "live": {
+     "by_version": {
+      "1": {
+       "mae_days": 22.576,
+       "n": 702,
+       "skill": 0.7114
+      },
+      "3": {
+       "mae_days": 18.58,
+       "n": 848,
+       "skill": 1.1276
+      },
+      "4": {
+       "mae_days": 2.369,
+       "n": 337,
+       "skill": 0.3241
+      }
+     },
+     "mae_days": 17.172,
+     "n": 1887,
+     "rule_mae_days": 20.517,
+     "skill": 0.837
+    },
+    "month": 20,
+    "orders": 1974,
+    "psi": {
+     "channel": 0.6223,
+     "customer_mean_ratio": 0.2353,
+     "last_ratio": 0.4961,
+     "qty": 0.0,
+     "subscriber": 0.0,
+     "supply_days": 0.0043
+    },
+    "psi_alerts": [
+     "channel",
+     "last_ratio",
+     "customer_mean_ratio"
+    ]
+   }
+  ],
+  "release": {
+   "rule_holdout": {
+    "mae_days": 11.246,
+    "n": 1549,
+    "reminders_on_time": 0.3241,
+    "reminders_too_late": 0.1679,
+    "within_7_days": 0.5629
+   },
+   "v1_holdout": {
+    "mae_days": 8.161,
+    "n": 1549,
+    "reminders_on_time": 0.3518,
+    "reminders_too_late": 0.0394,
+    "skill": 0.7257,
+    "within_7_days": 0.643
+   }
+  },
+  "served_mae_days": 11.279,
+  "served_rule_mae_days": 13.805,
+  "versions": [
+   {
+    "data_fingerprint": "83ec479fb947366e",
+    "model_sha256": "85c748feced2ccad",
+    "reason": "MAE 8.161 vs 11.246 for the pack-size rule",
+    "release_metrics": {
+     "mae_days": 8.161,
+     "n": 1549,
+     "reminders_on_time": 0.3518,
+     "reminders_too_late": 0.0394,
+     "skill": 0.7257,
+     "within_7_days": 0.643
+    },
+    "status": "retired",
+    "trained_through_day": 360,
+    "training_customers": 2321,
+    "version": 1
+   },
+   {
+    "data_fingerprint": "564954d0c66c0785",
+    "model_sha256": "ec0d0bea631f033d",
+    "reason": "retrain (drift in channel for 2 months); holdout MAE 7.2 vs champion 10.0",
+    "release_metrics": {
+     "mae_days": 7.24,
+     "n": 1910,
+     "reminders_on_time": 0.5141,
+     "reminders_too_late": 0.0675,
+     "skill": 0.5675,
+     "within_7_days": 0.7236
+    },
+    "status": "retired",
+    "trained_through_day": 480,
+    "training_customers": 3585,
+    "version": 2
+   },
+   {
+    "data_fingerprint": "corrupted",
+    "model_sha256": "473060dffa7edf0b",
+    "reason": "hotfix release that skipped the gate",
+    "release_metrics": {},
+    "status": "rolled_back",
+    "trained_through_day": 480,
+    "training_customers": 0,
+    "version": 3
+   },
+   {
+    "data_fingerprint": "7e340319d250107f",
+    "model_sha256": "12bc366067432e63",
+    "reason": "retrain (drift in channel, last_ratio for 2 months); holdout MAE 8.2 vs champion 10.0",
+    "release_metrics": {
+     "mae_days": 8.19,
+     "n": 1843,
+     "reminders_on_time": 0.4612,
+     "reminders_too_late": 0.051,
+     "skill": 0.4941,
+     "within_7_days": 0.6337
+    },
+    "status": "retired",
+    "trained_through_day": 540,
+    "training_customers": 4131,
+    "version": 4
+   },
+   {
+    "data_fingerprint": "dd57317e3d6951be",
+    "model_sha256": "be1ffbb1f7bc3da9",
+    "reason": "retrain (drift in channel, last_ratio, customer_mean_ratio for 2 months); holdout MAE 10.2 vs champion 13.9",
+    "release_metrics": {
+     "mae_days": 10.15,
+     "n": 1964,
+     "reminders_on_time": 0.4226,
+     "reminders_too_late": 0.0331,
+     "skill": 0.4712,
+     "within_7_days": 0.5677
+    },
+    "status": "champion",
+    "trained_through_day": 600,
+    "training_customers": 4562,
+    "version": 5
+   }
+  ],
+  "world": {
+   "customers": 6000,
+   "months": 20,
+   "orders": 35752,
+   "products": 32,
+   "train_months": 12
+  }
+ },
+ "tests": {
+  "python": 26,
+  "web": 7
+ }
+}

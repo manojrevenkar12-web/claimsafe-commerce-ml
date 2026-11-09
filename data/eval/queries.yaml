@@ -1,0 +1,33 @@
+# Customer questions for search evaluation. The topic is for scoring only: a product is relevant when its composition
+# makes it eligible for an authorised claim on that topic (see claimsafe.search.TOPICS). Retrieval never sees it.
+queries:
+  - {q: "something for when I'm always tired", topic: tiredness}
+  - {q: "I feel exhausted all the time, what helps against fatigue", topic: tiredness}
+  - {q: "support my immune system in winter", topic: immune}
+  - {q: "what should I take for my immunity", topic: immune}
+  - {q: "supplement for strong bones", topic: bones}
+  - {q: "I worry about my bones as I get older", topic: bones}
+  - {q: "vitamins for healthy hair", topic: hair}
+  - {q: "my hair is thin, anything I can take", topic: hair}
+  - {q: "something for my skin", topic: skin}
+  - {q: "nutrients for skin from within", topic: skin}
+  - {q: "brittle nails", topic: nails}
+  - {q: "heart health supplement", topic: heart}
+  - {q: "omega 3 for my heart", topic: heart}
+  - {q: "something for focus and memory at work", topic: brain}
+  - {q: "brain function vegan", topic: brain}
+  - {q: "good for my eyes and eyesight", topic: vision}
+  - {q: "vision support", topic: vision}
+  - {q: "muscle cramps after running", topic: muscle}
+  - {q: "for my muscles after training", topic: muscle}
+  - {q: "thyroid support", topic: thyroid}
+  - {q: "anything for my thyroid", topic: thyroid}
+  - {q: "I'm pregnant, what should I take", topic: pregnancy}
+  - {q: "planning a pregnancy", topic: pregnancy}
+  - {q: "low iron, red blood cells", topic: blood}
+  - {q: "blood formation", topic: blood}
+  - {q: "low mood and stress", topic: psychological}
+  - {q: "for my nerves and mental balance", topic: psychological}
+  - {q: "more energy for the day", topic: energy}
+  - {q: "energy metabolism support", topic: energy}
+  - {q: "strong teeth", topic: teeth}

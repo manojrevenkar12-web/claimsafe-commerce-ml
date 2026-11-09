@@ -1,0 +1,76 @@
+{
+ "erased_customers": 3,
+ "deleted": [
+  {
+   "identities": 1,
+   "orders": 28,
+   "features": 28,
+   "personalisation_index": 1
+  },
+  {
+   "identities": 1,
+   "orders": 2,
+   "features": 2,
+   "personalisation_index": 1
+  },
+  {
+   "identities": 1,
+   "orders": 2,
+   "features": 2,
+   "personalisation_index": 1
+  }
+ ],
+ "after_delete": [
+  {
+   "identities": 0,
+   "orders": 0,
+   "features": 0,
+   "personalisation_index": 0,
+   "model_manifests": []
+  },
+  {
+   "identities": 0,
+   "orders": 0,
+   "features": 0,
+   "personalisation_index": 0,
+   "model_manifests": [
+    1
+   ]
+  },
+  {
+   "identities": 0,
+   "orders": 0,
+   "features": 0,
+   "personalisation_index": 0,
+   "model_manifests": []
+  }
+ ],
+ "retrain_due_day": 430,
+ "purged_versions": [
+  1
+ ],
+ "after_retrain": [
+  {
+   "identities": 0,
+   "orders": 0,
+   "features": 0,
+   "personalisation_index": 0,
+   "model_manifests": []
+  },
+  {
+   "identities": 0,
+   "orders": 0,
+   "features": 0,
+   "personalisation_index": 0,
+   "model_manifests": []
+  },
+  {
+   "identities": 0,
+   "orders": 0,
+   "features": 0,
+   "personalisation_index": 0,
+   "model_manifests": []
+  }
+ ],
+ "seconds": 0.7
+}

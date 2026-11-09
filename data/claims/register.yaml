@@ -1,0 +1,660 @@
+source: https://www.legislation.gov.uk/eur/2012/432/annex (Commission Regulation (EU) No 432/2012, Annex)
+retrieved: '2026-11-09'
+note: Claim wording transcribed from the annex as published; conditions encoded below. Verify against the EU Register before relying on it.
+source_condition:
+  significant_amount_share_of_nrv: 0.15
+  basis: per recommended daily dose (food supplements)
+  summary: The claim may be used only for food which is at least a source of the nutrient as referred to in the claim SOURCE OF [NAME OF VITAMIN/S]
+    AND/OR [NAME OF MINERAL/S] as listed in the Annex to Regulation (EC) No 1924/2006.
+nutrients:
+  vitamin_d:
+    name: Vitamin D
+    unit: µg
+    nrv: 5
+    aliases:
+    - vitamin d
+    - vitamin d3
+    - cholecalciferol
+    - vitamin d2
+  magnesium:
+    name: Magnesium
+    unit: mg
+    nrv: 375
+    aliases:
+    - magnesium
+  vitamin_c:
+    name: Vitamin C
+    unit: mg
+    nrv: 80
+    aliases:
+    - vitamin c
+    - ascorbic acid
+  vitamin_b12:
+    name: Vitamin B12
+    unit: µg
+    nrv: 2.5
+    aliases:
+    - vitamin b12
+    - b12
+    - cobalamin
+    - methylcobalamin
+  iron:
+    name: Iron
+    unit: mg
+    nrv: 14
+    aliases:
+    - iron
+  selenium:
+    name: Selenium
+    unit: µg
+    nrv: 55
+    aliases:
+    - selenium
+  biotin:
+    name: Biotin
+    unit: µg
+    nrv: 50
+    aliases:
+    - biotin
+    - vitamin b7
+  folate:
+    name: Folate
+    unit: µg
+    nrv: 200
+    aliases:
+    - folate
+    - folic acid
+    - methylfolate
+  calcium:
+    name: Calcium
+    unit: mg
+    nrv: 800
+    aliases:
+    - calcium
+  iodine:
+    name: Iodine
+    unit: µg
+    nrv: 150
+    aliases:
+    - iodine
+  vitamin_k:
+    name: Vitamin K
+    unit: µg
+    nrv: 75
+    aliases:
+    - vitamin k
+    - vitamin k2
+    - vitamin k1
+    - menaquinone
+  zinc:
+    name: Zinc
+    unit: mg
+    nrv: 10
+    aliases:
+    - zinc
+  dha:
+    name: DHA
+    unit: mg
+    nrv: null
+    aliases:
+    - dha
+    - docosahexaenoic acid
+  epa:
+    name: EPA
+    unit: mg
+    nrv: null
+    aliases:
+    - epa
+    - eicosapentaenoic acid
+claims:
+- id: C001
+  nutrient: vitamin_d
+  text: Vitamin D contributes to normal absorption/utilisation of calcium and phosphorus
+  condition:
+    kind: source_nrv
+- id: C002
+  nutrient: vitamin_d
+  text: Vitamin D contributes to normal blood calcium levels
+  condition:
+    kind: source_nrv
+- id: C003
+  nutrient: vitamin_d
+  text: Vitamin D contributes to the maintenance of normal bones
+  condition:
+    kind: source_nrv
+- id: C004
+  nutrient: vitamin_d
+  text: Vitamin D contributes to the maintenance of normal muscle function
+  condition:
+    kind: source_nrv
+- id: C005
+  nutrient: vitamin_d
+  text: Vitamin D contributes to the maintenance of normal teeth
+  condition:
+    kind: source_nrv
+- id: C006
+  nutrient: vitamin_d
+  text: Vitamin D contributes to the normal function of the immune system
+  condition:
+    kind: source_nrv
+- id: C007
+  nutrient: vitamin_d
+  text: Vitamin D has a role in the process of cell division
+  condition:
+    kind: source_nrv
+- id: C008
+  nutrient: magnesium
+  text: Magnesium contributes to a reduction of tiredness and fatigue
+  condition:
+    kind: source_nrv
+- id: C009
+  nutrient: magnesium
+  text: Magnesium contributes to electrolyte balance
+  condition:
+    kind: source_nrv
+- id: C010
+  nutrient: magnesium
+  text: Magnesium contributes to normal energy-yielding metabolism
+  condition:
+    kind: source_nrv
+- id: C011
+  nutrient: magnesium
+  text: Magnesium contributes to normal functioning of the nervous system
+  condition:
+    kind: source_nrv
+- id: C012
+  nutrient: magnesium
+  text: Magnesium contributes to normal muscle function
+  condition:
+    kind: source_nrv
+- id: C013
+  nutrient: magnesium
+  text: Magnesium contributes to normal protein synthesis
+  condition:
+    kind: source_nrv
+- id: C014
+  nutrient: magnesium
+  text: Magnesium contributes to normal psychological function
+  condition:
+    kind: source_nrv
+- id: C015
+  nutrient: magnesium
+  text: Magnesium contributes to the maintenance of normal bones
+  condition:
+    kind: source_nrv
+- id: C016
+  nutrient: magnesium
+  text: Magnesium contributes to the maintenance of normal teeth
+  condition:
+    kind: source_nrv
+- id: C017
+  nutrient: magnesium
+  text: Magnesium has a role in the process of cell division
+  condition:
+    kind: source_nrv
+- id: C018
+  nutrient: vitamin_c
+  text: Vitamin C contributes to normal collagen formation for the normal function of blood vessels
+  condition:
+    kind: source_nrv
+- id: C019
+  nutrient: vitamin_c
+  text: Vitamin C contributes to normal collagen formation for the normal function of bones
+  condition:
+    kind: source_nrv
+- id: C020
+  nutrient: vitamin_c
+  text: Vitamin C contributes to normal collagen formation for the normal function of cartilage
+  condition:
+    kind: source_nrv
+- id: C021
+  nutrient: vitamin_c
+  text: Vitamin C contributes to normal collagen formation for the normal function of gums
+  condition:
+    kind: source_nrv
+- id: C022
+  nutrient: vitamin_c
+  text: Vitamin C contributes to normal collagen formation for the normal function of skin
+  condition:
+    kind: source_nrv
+- id: C023
+  nutrient: vitamin_c
+  text: Vitamin C contributes to normal collagen formation for the normal function of teeth
+  condition:
+    kind: source_nrv
+- id: C024
+  nutrient: vitamin_c
+  text: Vitamin C contributes to normal energy-yielding metabolism
+  condition:
+    kind: source_nrv
+- id: C025
+  nutrient: vitamin_c
+  text: Vitamin C contributes to normal functioning of the nervous system
+  condition:
+    kind: source_nrv
+- id: C026
+  nutrient: vitamin_c
+  text: Vitamin C contributes to normal psychological function
+  condition:
+    kind: source_nrv
+- id: C027
+  nutrient: vitamin_c
+  text: Vitamin C contributes to the normal function of the immune system
+  condition:
+    kind: source_nrv
+- id: C028
+  nutrient: vitamin_c
+  text: Vitamin C contributes to the protection of cells from oxidative stress
+  condition:
+    kind: source_nrv
+- id: C029
+  nutrient: vitamin_c
+  text: Vitamin C contributes to the reduction of tiredness and fatigue
+  condition:
+    kind: source_nrv
+- id: C030
+  nutrient: vitamin_c
+  text: Vitamin C contributes to the regeneration of the reduced form of vitamin E
+  condition:
+    kind: source_nrv
+- id: C031
+  nutrient: vitamin_c
+  text: Vitamin C increases iron absorption
+  condition:
+    kind: source_nrv
+- id: C032
+  nutrient: vitamin_b12
+  text: Vitamin B12 contributes to normal energy-yielding metabolism
+  condition:
+    kind: source_nrv
+- id: C033
+  nutrient: vitamin_b12
+  text: Vitamin B12 contributes to normal functioning of the nervous system
+  condition:
+    kind: source_nrv
+- id: C034
+  nutrient: vitamin_b12
+  text: Vitamin B12 contributes to normal homocysteine metabolism
+  condition:
+    kind: source_nrv
+- id: C035
+  nutrient: vitamin_b12
+  text: Vitamin B12 contributes to normal psychological function
+  condition:
+    kind: source_nrv
+- id: C036
+  nutrient: vitamin_b12
+  text: Vitamin B12 contributes to normal red blood cell formation
+  condition:
+    kind: source_nrv
+- id: C037
+  nutrient: vitamin_b12
+  text: Vitamin B12 contributes to the normal function of the immune system
+  condition:
+    kind: source_nrv
+- id: C038
+  nutrient: vitamin_b12
+  text: Vitamin B12 contributes to the reduction of tiredness and fatigue
+  condition:
+    kind: source_nrv
+- id: C039
+  nutrient: vitamin_b12
+  text: Vitamin B12 has a role in the process of cell division
+  condition:
+    kind: source_nrv
+- id: C040
+  nutrient: iron
+  text: Iron contributes to normal cognitive function
+  condition:
+    kind: source_nrv
+- id: C041
+  nutrient: iron
+  text: Iron contributes to normal energy-yielding metabolism
+  condition:
+    kind: source_nrv
+- id: C042
+  nutrient: iron
+  text: Iron contributes to normal formation of red blood cells and haemoglobin
+  condition:
+    kind: source_nrv
+- id: C043
+  nutrient: iron
+  text: Iron contributes to normal oxygen transport in the body
+  condition:
+    kind: source_nrv
+- id: C044
+  nutrient: iron
+  text: Iron contributes to the normal function of the immune system
+  condition:
+    kind: source_nrv
+- id: C045
+  nutrient: iron
+  text: Iron contributes to the reduction of tiredness and fatigue
+  condition:
+    kind: source_nrv
+- id: C046
+  nutrient: iron
+  text: Iron has a role in the process of cell division
+  condition:
+    kind: source_nrv
+- id: C047
+  nutrient: selenium
+  text: Selenium contributes to normal spermatogenesis
+  condition:
+    kind: source_nrv
+- id: C048
+  nutrient: selenium
+  text: Selenium contributes to the maintenance of normal hair
+  condition:
+    kind: source_nrv
+- id: C049
+  nutrient: selenium
+  text: Selenium contributes to the maintenance of normal nails
+  condition:
+    kind: source_nrv
+- id: C050
+  nutrient: selenium
+  text: Selenium contributes to the normal function of the immune system
+  condition:
+    kind: source_nrv
+- id: C051
+  nutrient: selenium
+  text: Selenium contributes to the normal thyroid function
+  condition:
+    kind: source_nrv
+- id: C052
+  nutrient: selenium
+  text: Selenium contributes to the protection of cells from oxidative stress
+  condition:
+    kind: source_nrv
+- id: C053
+  nutrient: biotin
+  text: Biotin contributes to normal energy-yielding metabolism
+  condition:
+    kind: source_nrv
+- id: C054
+  nutrient: biotin
+  text: Biotin contributes to normal functioning of the nervous system
+  condition:
+    kind: source_nrv
+- id: C055
+  nutrient: biotin
+  text: Biotin contributes to normal macronutrient metabolism
+  condition:
+    kind: source_nrv
+- id: C056
+  nutrient: biotin
+  text: Biotin contributes to normal psychological function
+  condition:
+    kind: source_nrv
+- id: C057
+  nutrient: biotin
+  text: Biotin contributes to the maintenance of normal hair
+  condition:
+    kind: source_nrv
+- id: C058
+  nutrient: biotin
+  text: Biotin contributes to the maintenance of normal mucous membranes
+  condition:
+    kind: source_nrv
+- id: C059
+  nutrient: biotin
+  text: Biotin contributes to the maintenance of normal skin
+  condition:
+    kind: source_nrv
+- id: C060
+  nutrient: folate
+  text: Folate contributes to maternal tissue growth during pregnancy
+  condition:
+    kind: source_nrv
+- id: C061
+  nutrient: folate
+  text: Folate contributes to normal amino acid synthesis
+  condition:
+    kind: source_nrv
+- id: C062
+  nutrient: folate
+  text: Folate contributes to normal blood formation
+  condition:
+    kind: source_nrv
+- id: C063
+  nutrient: folate
+  text: Folate contributes to normal homocysteine metabolism
+  condition:
+    kind: source_nrv
+- id: C064
+  nutrient: folate
+  text: Folate contributes to normal psychological function
+  condition:
+    kind: source_nrv
+- id: C065
+  nutrient: folate
+  text: Folate contributes to the normal function of the immune system
+  condition:
+    kind: source_nrv
+- id: C066
+  nutrient: folate
+  text: Folate contributes to the reduction of tiredness and fatigue
+  condition:
+    kind: source_nrv
+- id: C067
+  nutrient: folate
+  text: Folate has a role in the process of cell division
+  condition:
+    kind: source_nrv
+- id: C068
+  nutrient: calcium
+  text: Calcium contributes to normal blood clotting
+  condition:
+    kind: source_nrv
+- id: C069
+  nutrient: calcium
+  text: Calcium contributes to normal energy-yielding metabolism
+  condition:
+    kind: source_nrv
+- id: C070
+  nutrient: calcium
+  text: Calcium contributes to normal muscle function
+  condition:
+    kind: source_nrv
+- id: C071
+  nutrient: calcium
+  text: Calcium contributes to normal neurotransmission
+  condition:
+    kind: source_nrv
+- id: C072
+  nutrient: calcium
+  text: Calcium contributes to the normal function of digestive enzymes
+  condition:
+    kind: source_nrv
+- id: C073
+  nutrient: calcium
+  text: Calcium has a role in the process of cell division and specialisation
+  condition:
+    kind: source_nrv
+- id: C074
+  nutrient: calcium
+  text: Calcium is needed for the maintenance of normal bones
+  condition:
+    kind: source_nrv
+- id: C075
+  nutrient: calcium
+  text: Calcium is needed for the maintenance of normal teeth
+  condition:
+    kind: source_nrv
+- id: C076
+  nutrient: iodine
+  text: Iodine contributes to normal cognitive function
+  condition:
+    kind: source_nrv
+- id: C077
+  nutrient: iodine
+  text: Iodine contributes to normal energy-yielding metabolism
+  condition:
+    kind: source_nrv
+- id: C078
+  nutrient: iodine
+  text: Iodine contributes to normal functioning of the nervous system
+  condition:
+    kind: source_nrv
+- id: C079
+  nutrient: iodine
+  text: Iodine contributes to the maintenance of normal skin
+  condition:
+    kind: source_nrv
+- id: C080
+  nutrient: iodine
+  text: Iodine contributes to the normal production of thyroid hormones and normal thyroid function
+  condition:
+    kind: source_nrv
+- id: C081
+  nutrient: vitamin_k
+  text: Vitamin K contributes to normal blood clotting
+  condition:
+    kind: source_nrv
+- id: C082
+  nutrient: vitamin_k
+  text: Vitamin K contributes to the maintenance of normal bones
+  condition:
+    kind: source_nrv
+- id: C083
+  nutrient: zinc
+  text: Zinc contributes to normal acid-base metabolism
+  condition:
+    kind: source_nrv
+- id: C084
+  nutrient: zinc
+  text: Zinc contributes to normal carbohydrate metabolism
+  condition:
+    kind: source_nrv
+- id: C085
+  nutrient: zinc
+  text: Zinc contributes to normal cognitive function
+  condition:
+    kind: source_nrv
+- id: C086
+  nutrient: zinc
+  text: Zinc contributes to normal DNA synthesis
+  condition:
+    kind: source_nrv
+- id: C087
+  nutrient: zinc
+  text: Zinc contributes to normal fertility and reproduction
+  condition:
+    kind: source_nrv
+- id: C088
+  nutrient: zinc
+  text: Zinc contributes to normal macronutrient metabolism
+  condition:
+    kind: source_nrv
+- id: C089
+  nutrient: zinc
+  text: Zinc contributes to normal metabolism of fatty acids
+  condition:
+    kind: source_nrv
+- id: C090
+  nutrient: zinc
+  text: Zinc contributes to normal metabolism of vitamin A
+  condition:
+    kind: source_nrv
+- id: C091
+  nutrient: zinc
+  text: Zinc contributes to normal protein synthesis
+  condition:
+    kind: source_nrv
+- id: C092
+  nutrient: zinc
+  text: Zinc contributes to the maintenance of normal bones
+  condition:
+    kind: source_nrv
+- id: C093
+  nutrient: zinc
+  text: Zinc contributes to the maintenance of normal hair
+  condition:
+    kind: source_nrv
+- id: C094
+  nutrient: zinc
+  text: Zinc contributes to the maintenance of normal nails
+  condition:
+    kind: source_nrv
+- id: C095
+  nutrient: zinc
+  text: Zinc contributes to the maintenance of normal skin
+  condition:
+    kind: source_nrv
+- id: C096
+  nutrient: zinc
+  text: Zinc contributes to the maintenance of normal testosterone levels in the blood
+  condition:
+    kind: source_nrv
+- id: C097
+  nutrient: zinc
+  text: Zinc contributes to the maintenance of normal vision
+  condition:
+    kind: source_nrv
+- id: C098
+  nutrient: zinc
+  text: Zinc contributes to the normal function of the immune system
+  condition:
+    kind: source_nrv
+- id: C099
+  nutrient: zinc
+  text: Zinc contributes to the protection of cells from oxidative stress
+  condition:
+    kind: source_nrv
+- id: C100
+  nutrient: zinc
+  text: Zinc has a role in the process of cell division
+  condition:
+    kind: source_nrv
+- id: C900
+  nutrient: vitamin_c
+  text: Vitamin C contributes to maintain the normal function of the immune system during and after intense physical exercise
+  condition:
+    kind: min_daily
+    amounts:
+      vitamin_c: 200
+    statement: null
+    note: daily intake of 200 mg in addition to the recommended daily intake of vitamin C
+- id: C901
+  nutrient: dha
+  text: DHA contributes to maintenance of normal brain function
+  condition:
+    kind: min_daily
+    amounts:
+      dha: 250
+    statement: The beneficial effect is obtained with a daily intake of 250 mg of DHA
+- id: C902
+  nutrient: dha
+  text: DHA contributes to the maintenance of normal vision
+  condition:
+    kind: min_daily
+    amounts:
+      dha: 250
+    statement: The beneficial effect is obtained with a daily intake of 250 mg of DHA
+- id: C903
+  nutrient: epa_dha
+  text: EPA and DHA contribute to the normal function of the heart
+  condition:
+    kind: min_daily
+    amounts:
+      epa+dha: 250
+    statement: The beneficial effect is obtained with a daily intake of 250 mg of EPA and DHA
+- id: C904
+  nutrient: epa_dha
+  text: DHA and EPA contribute to the maintenance of normal blood pressure
+  condition:
+    kind: min_daily
+    amounts:
+      epa+dha: 3000
+    statement: The beneficial effect is obtained with a daily intake of 3 g of EPA and DHA
+    not_for_children: true
+- id: C905
+  nutrient: epa_dha
+  text: DHA and EPA contribute to the maintenance of normal blood triglyceride levels
+  condition:
+    kind: min_daily
+    amounts:
+      epa+dha: 2000
+    statement: The beneficial effect is obtained with a daily intake of 2 g of EPA and DHA
+    not_for_children: true

@@ -1,0 +1,987 @@
+{
+ "register": {
+  "claims": 106,
+  "nutrients": 14,
+  "source": "https://www.legislation.gov.uk/eur/2012/432/annex (Commission Regulation (EU) No 432/2012, Annex)"
+ },
+ "catalogue": {
+  "products": 40,
+  "with_findings": 22,
+  "blocked": 17,
+  "rewrite_only": 5,
+  "without_any_eligible_claim": 12,
+  "rows": [
+   {
+    "product": "P01",
+    "name": "Vitamin D3 1000 IU drops",
+    "verdict": "ok",
+    "eligible_claims": 7,
+    "findings": [],
+    "sentences": [
+     {
+      "text": "Vegan vitamin D3 from lichen in MCT oil.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Vitamin D contributes to the normal function of the immune system.",
+      "verdict": "ok"
+     }
+    ],
+    "safe_text": "Vegan vitamin D3 from lichen in MCT oil. Vitamin D contributes to the normal function of the immune system."
+   },
+   {
+    "product": "P02",
+    "name": "Vitamin D3 + K2 drops",
+    "verdict": "rewrite",
+    "eligible_claims": 9,
+    "findings": [
+     {
+      "sentence": "The duo for strong bones.",
+      "verdict": "rewrite",
+      "reason": "health claim not in authorised wording",
+      "suggestion": "Vitamin D contributes to the maintenance of normal bones. Vitamin K contributes to the maintenance of normal bones."
+     },
+     {
+      "sentence": "Vitamin D3 and K2 work together so calcium ends up in your bones, not your arteries.",
+      "verdict": "rewrite",
+      "reason": "health claim not in authorised wording",
+      "suggestion": "Vitamin D contributes to the maintenance of normal bones."
+     }
+    ],
+    "sentences": [
+     {
+      "text": "The duo for strong bones.",
+      "verdict": "rewrite"
+     },
+     {
+      "text": "Vitamin D3 and K2 work together so calcium ends up in your bones, not your arteries.",
+      "verdict": "rewrite"
+     }
+    ],
+    "safe_text": "Vitamin D contributes to the maintenance of normal bones. Vitamin K contributes to the maintenance of normal bones. Vitamin D contributes to the maintenance of normal bones."
+   },
+   {
+    "product": "P03",
+    "name": "Vitamin D3 200 IU kids drops",
+    "verdict": "rewrite",
+    "eligible_claims": 7,
+    "findings": [
+     {
+      "sentence": "Supports healthy growth and strong teeth.",
+      "verdict": "rewrite",
+      "reason": "health claim not in authorised wording",
+      "suggestion": "Vitamin D contributes to the maintenance of normal teeth."
+     }
+    ],
+    "sentences": [
+     {
+      "text": "Gentle dose for children.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Supports healthy growth and strong teeth.",
+      "verdict": "rewrite"
+     }
+    ],
+    "safe_text": "Gentle dose for children. Vitamin D contributes to the maintenance of normal teeth."
+   },
+   {
+    "product": "P04",
+    "name": "Vitamin D3 400 IU low dose",
+    "verdict": "block",
+    "eligible_claims": 0,
+    "findings": [
+     {
+      "sentence": "Strengthens your immune system through the winter.",
+      "verdict": "block",
+      "reason": "closest authorised claim does not apply to this product: Vitamin D: 0.5 µg per daily dose is 10% of the NRV; a claim needs at least 15% (0.75 µg)",
+      "suggestion": null
+     }
+    ],
+    "sentences": [
+     {
+      "text": "A low daily dose for everyone who gets some sun.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Strengthens your immune system through the winter.",
+      "verdict": "block"
+     }
+    ],
+    "safe_text": "A low daily dose for everyone who gets some sun."
+   },
+   {
+    "product": "P05",
+    "name": "Magnesium bisglycinate 300 mg",
+    "verdict": "ok",
+    "eligible_claims": 10,
+    "findings": [],
+    "sentences": [
+     {
+      "text": "Highly bioavailable chelate.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Magnesium contributes to a reduction of tiredness and fatigue.",
+      "verdict": "ok"
+     }
+    ],
+    "safe_text": "Highly bioavailable chelate. Magnesium contributes to a reduction of tiredness and fatigue."
+   },
+   {
+    "product": "P06",
+    "name": "Magnesium citrate powder",
+    "verdict": "block",
+    "eligible_claims": 10,
+    "findings": [
+     {
+      "sentence": "Relieves muscle cramps after sport and helps you sleep through the night.",
+      "verdict": "block",
+      "reason": "medicinal claim: names cramps; food may not claim to prevent, treat or cure a disease (Reg. (EU) 1169/2011 Art. 7(3))",
+      "suggestion": null
+     }
+    ],
+    "sentences": [
+     {
+      "text": "Fizzy lemon drink.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Relieves muscle cramps after sport and helps you sleep through the night.",
+      "verdict": "block"
+     }
+    ],
+    "safe_text": "Fizzy lemon drink."
+   },
+   {
+    "product": "P07",
+    "name": "Magnesium trace drink",
+    "verdict": "block",
+    "eligible_claims": 0,
+    "findings": [
+     {
+      "sentence": "Fights tiredness naturally.",
+      "verdict": "block",
+      "reason": "no authorised claim for this product matches this wording",
+      "suggestion": null
+     }
+    ],
+    "sentences": [
+     {
+      "text": "A light mineral drink with a hint of magnesium.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Fights tiredness naturally.",
+      "verdict": "block"
+     }
+    ],
+    "safe_text": "A light mineral drink with a hint of magnesium."
+   },
+   {
+    "product": "P08",
+    "name": "Vitamin C buffered 500 mg",
+    "verdict": "ok",
+    "eligible_claims": 15,
+    "findings": [],
+    "sentences": [
+     {
+      "text": "Gentle on the stomach.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Vitamin C contributes to normal collagen formation for the normal function of skin.",
+      "verdict": "ok"
+     }
+    ],
+    "safe_text": "Gentle on the stomach. Vitamin C contributes to normal collagen formation for the normal function of skin."
+   },
+   {
+    "product": "P09",
+    "name": "Acerola vitamin C powder",
+    "verdict": "block",
+    "eligible_claims": 14,
+    "findings": [
+     {
+      "sentence": "Protects you from colds and flu.",
+      "verdict": "block",
+      "reason": "medicinal claim: names colds, flu; food may not claim to prevent, treat or cure a disease (Reg. (EU) 1169/2011 Art. 7(3))",
+      "suggestion": null
+     }
+    ],
+    "sentences": [
+     {
+      "text": "Natural vitamin C from acerola cherries.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Protects you from colds and flu.",
+      "verdict": "block"
+     }
+    ],
+    "safe_text": "Natural vitamin C from acerola cherries."
+   },
+   {
+    "product": "P10",
+    "name": "Vitamin B12 methylcobalamin 500 µg",
+    "verdict": "ok",
+    "eligible_claims": 8,
+    "findings": [],
+    "sentences": [
+     {
+      "text": "Active B12 for vegans.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Vitamin B12 contributes to the reduction of tiredness and fatigue.",
+      "verdict": "ok"
+     }
+    ],
+    "safe_text": "Active B12 for vegans. Vitamin B12 contributes to the reduction of tiredness and fatigue."
+   },
+   {
+    "product": "P11",
+    "name": "B12 depot drops",
+    "verdict": "block",
+    "eligible_claims": 8,
+    "findings": [
+     {
+      "sentence": "Boosts your energy and cures B12 deficiency anaemia.",
+      "verdict": "block",
+      "reason": "medicinal claim: names anaemia, deficiency; food may not claim to prevent, treat or cure a disease (Reg. (EU) 1169/2011 Art. 7(3))",
+      "suggestion": null
+     }
+    ],
+    "sentences": [
+     {
+      "text": "Boosts your energy and cures B12 deficiency anaemia.",
+      "verdict": "block"
+     }
+    ],
+    "safe_text": ""
+   },
+   {
+    "product": "P12",
+    "name": "Iron bisglycinate 14 mg + vitamin C",
+    "verdict": "ok",
+    "eligible_claims": 21,
+    "findings": [],
+    "sentences": [
+     {
+      "text": "Gentle iron with vitamin C.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Iron contributes to normal formation of red blood cells and haemoglobin.",
+      "verdict": "ok"
+     }
+    ],
+    "safe_text": "Gentle iron with vitamin C. Iron contributes to normal formation of red blood cells and haemoglobin."
+   },
+   {
+    "product": "P13",
+    "name": "Zinc picolinate 10 mg",
+    "verdict": "block",
+    "eligible_claims": 18,
+    "findings": [
+     {
+      "sentence": "Great for clear skin and against acne.",
+      "verdict": "block",
+      "reason": "medicinal claim: names acne; food may not claim to prevent, treat or cure a disease (Reg. (EU) 1169/2011 Art. 7(3))",
+      "suggestion": null
+     }
+    ],
+    "sentences": [
+     {
+      "text": "Zinc contributes to the normal function of the immune system.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Great for clear skin and against acne.",
+      "verdict": "block"
+     }
+    ],
+    "safe_text": "Zinc contributes to the normal function of the immune system."
+   },
+   {
+    "product": "P14",
+    "name": "Zinc 1 mg micro dose",
+    "verdict": "block",
+    "eligible_claims": 0,
+    "findings": [
+     {
+      "sentence": "A small daily zinc top-up for healthy hair and nails.",
+      "verdict": "block",
+      "reason": "closest authorised claim does not apply to this product: Zinc: 1 mg per daily dose is 10% of the NRV; a claim needs at least 15% (1.5 mg)",
+      "suggestion": null
+     }
+    ],
+    "sentences": [
+     {
+      "text": "A small daily zinc top-up for healthy hair and nails.",
+      "verdict": "block"
+     }
+    ],
+    "safe_text": ""
+   },
+   {
+    "product": "P15",
+    "name": "Selenium 55 µg",
+    "verdict": "ok",
+    "eligible_claims": 6,
+    "findings": [],
+    "sentences": [
+     {
+      "text": "Selenium contributes to the normal thyroid function.",
+      "verdict": "ok"
+     }
+    ],
+    "safe_text": "Selenium contributes to the normal thyroid function."
+   },
+   {
+    "product": "P16",
+    "name": "Biotin 5000 µg",
+    "verdict": "rewrite",
+    "eligible_claims": 7,
+    "findings": [
+     {
+      "sentence": "For full, shiny hair.",
+      "verdict": "rewrite",
+      "reason": "health claim not in authorised wording",
+      "suggestion": "Biotin contributes to the maintenance of normal hair."
+     }
+    ],
+    "sentences": [
+     {
+      "text": "For full, shiny hair.",
+      "verdict": "rewrite"
+     },
+     {
+      "text": "Biotin contributes to the maintenance of normal hair.",
+      "verdict": "ok"
+     }
+    ],
+    "safe_text": "Biotin contributes to the maintenance of normal hair. Biotin contributes to the maintenance of normal hair."
+   },
+   {
+    "product": "P17",
+    "name": "Folate 400 µg (methylfolate)",
+    "verdict": "ok",
+    "eligible_claims": 8,
+    "findings": [],
+    "sentences": [
+     {
+      "text": "Folate contributes to maternal tissue growth during pregnancy.",
+      "verdict": "ok"
+     }
+    ],
+    "safe_text": "Folate contributes to maternal tissue growth during pregnancy."
+   },
+   {
+    "product": "P18",
+    "name": "Calcium from algae 400 mg",
+    "verdict": "block",
+    "eligible_claims": 8,
+    "findings": [
+     {
+      "sentence": "Prevents osteoporosis in later life.",
+      "verdict": "block",
+      "reason": "medicinal claim: names osteoporosis; food may not claim to prevent, treat or cure a disease (Reg. (EU) 1169/2011 Art. 7(3))",
+      "suggestion": null
+     }
+    ],
+    "sentences": [
+     {
+      "text": "Calcium is needed for the maintenance of normal bones.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Prevents osteoporosis in later life.",
+      "verdict": "block"
+     }
+    ],
+    "safe_text": "Calcium is needed for the maintenance of normal bones."
+   },
+   {
+    "product": "P19",
+    "name": "Iodine from kelp 150 µg",
+    "verdict": "ok",
+    "eligible_claims": 5,
+    "findings": [],
+    "sentences": [
+     {
+      "text": "Iodine contributes to the normal production of thyroid hormones and normal thyroid function.",
+      "verdict": "ok"
+     }
+    ],
+    "safe_text": "Iodine contributes to the normal production of thyroid hormones and normal thyroid function."
+   },
+   {
+    "product": "P20",
+    "name": "Vitamin K2 MK-7 100 µg",
+    "verdict": "ok",
+    "eligible_claims": 2,
+    "findings": [],
+    "sentences": [
+     {
+      "text": "Vitamin K contributes to the maintenance of normal bones.",
+      "verdict": "ok"
+     }
+    ],
+    "safe_text": "Vitamin K contributes to the maintenance of normal bones."
+   },
+   {
+    "product": "P21",
+    "name": "Omega-3 algae oil",
+    "verdict": "ok",
+    "eligible_claims": 3,
+    "findings": [],
+    "sentences": [
+     {
+      "text": "Vegan omega-3 from algae.",
+      "verdict": "ok"
+     },
+     {
+      "text": "DHA contributes to maintenance of normal brain function.",
+      "verdict": "ok"
+     },
+     {
+      "text": "The beneficial effect is obtained with a daily intake of 250 mg of DHA.",
+      "verdict": "ok"
+     }
+    ],
+    "safe_text": "Vegan omega-3 from algae. DHA contributes to maintenance of normal brain function. The beneficial effect is obtained with a daily intake of 250 mg of DHA."
+   },
+   {
+    "product": "P22",
+    "name": "Omega-3 fish oil high dose",
+    "verdict": "rewrite",
+    "eligible_claims": 5,
+    "findings": [
+     {
+      "sentence": "Lowers blood pressure and protects your heart.",
+      "verdict": "rewrite",
+      "reason": "health claim not in authorised wording",
+      "suggestion": "EPA and DHA contribute to the normal function of the heart. The beneficial effect is obtained with a daily intake of 250 mg of EPA and DHA."
+     }
+    ],
+    "sentences": [
+     {
+      "text": "High-dose EPA and DHA.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Lowers blood pressure and protects your heart.",
+      "verdict": "rewrite"
+     }
+    ],
+    "safe_text": "High-dose EPA and DHA. EPA and DHA contribute to the normal function of the heart. The beneficial effect is obtained with a daily intake of 250 mg of EPA and DHA."
+   },
+   {
+    "product": "P23",
+    "name": "Omega-3 light",
+    "verdict": "block",
+    "eligible_claims": 0,
+    "findings": [
+     {
+      "sentence": "An everyday omega-3 for brain and eyes.",
+      "verdict": "block",
+      "reason": "closest authorised claim does not apply to this product: DHA: 100 mg per daily dose; this claim needs 250 mg",
+      "suggestion": null
+     }
+    ],
+    "sentences": [
+     {
+      "text": "An everyday omega-3 for brain and eyes.",
+      "verdict": "block"
+     }
+    ],
+    "safe_text": ""
+   },
+   {
+    "product": "P24",
+    "name": "Kids omega-3 drops",
+    "verdict": "ok",
+    "eligible_claims": 3,
+    "findings": [],
+    "sentences": [
+     {
+      "text": "DHA for growing minds.",
+      "verdict": "ok"
+     }
+    ],
+    "safe_text": "DHA for growing minds."
+   },
+   {
+    "product": "P25",
+    "name": "Multivitamin complete",
+    "verdict": "block",
+    "eligible_claims": 92,
+    "findings": [
+     {
+      "sentence": "Your all-round protection.",
+      "verdict": "block",
+      "reason": "no authorised claim for this product matches this wording",
+      "suggestion": null
+     }
+    ],
+    "sentences": [
+     {
+      "text": "Everything you need in two capsules a day.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Your all-round protection.",
+      "verdict": "block"
+     }
+    ],
+    "safe_text": "Everything you need in two capsules a day."
+   },
+   {
+    "product": "P26",
+    "name": "Immune complex C + zinc + D3",
+    "verdict": "ok",
+    "eligible_claims": 40,
+    "findings": [],
+    "sentences": [
+     {
+      "text": "Vitamin C, zinc and vitamin D contribute to the normal function of the immune system.",
+      "verdict": "ok"
+     }
+    ],
+    "safe_text": "Vitamin C, zinc and vitamin D contribute to the normal function of the immune system."
+   },
+   {
+    "product": "P27",
+    "name": "Hair, skin and nails complex",
+    "verdict": "block",
+    "eligible_claims": 45,
+    "findings": [
+     {
+      "sentence": "Biotin, zinc and selenium for beautiful hair, skin and nails from within.",
+      "verdict": "rewrite",
+      "reason": "health claim not in authorised wording",
+      "suggestion": "Selenium contributes to the maintenance of normal hair. Biotin contributes to the maintenance of normal hair. Zinc contributes to the maintenance of normal hair."
+     },
+     {
+      "sentence": "Anti-ageing from the inside.",
+      "verdict": "block",
+      "reason": "no authorised claim for this product matches this wording",
+      "suggestion": null
+     }
+    ],
+    "sentences": [
+     {
+      "text": "Biotin, zinc and selenium for beautiful hair, skin and nails from within.",
+      "verdict": "rewrite"
+     },
+     {
+      "text": "Anti-ageing from the inside.",
+      "verdict": "block"
+     }
+    ],
+    "safe_text": "Selenium contributes to the maintenance of normal hair. Biotin contributes to the maintenance of normal hair. Zinc contributes to the maintenance of normal hair."
+   },
+   {
+    "product": "P28",
+    "name": "Ashwagandha KSM-66 600 mg",
+    "verdict": "block",
+    "eligible_claims": 0,
+    "findings": [
+     {
+      "sentence": "The adaptogen for stress.",
+      "verdict": "block",
+      "reason": "no authorised health claim exists for adaptogen",
+      "suggestion": null
+     },
+     {
+      "sentence": "Ashwagandha lowers cortisol and reduces anxiety.",
+      "verdict": "block",
+      "reason": "medicinal claim: names anxiety; food may not claim to prevent, treat or cure a disease (Reg. (EU) 1169/2011 Art. 7(3))",
+      "suggestion": null
+     }
+    ],
+    "sentences": [
+     {
+      "text": "The adaptogen for stress.",
+      "verdict": "block"
+     },
+     {
+      "text": "Ashwagandha lowers cortisol and reduces anxiety.",
+      "verdict": "block"
+     }
+    ],
+    "safe_text": ""
+   },
+   {
+    "product": "P29",
+    "name": "Turmeric extract with black pepper",
+    "verdict": "block",
+    "eligible_claims": 0,
+    "findings": [
+     {
+      "sentence": "Curcumin fights inflammation and soothes joint pain.",
+      "verdict": "block",
+      "reason": "medicinal claim: names inflammation, pain; food may not claim to prevent, treat or cure a disease (Reg. (EU) 1169/2011 Art. 7(3))",
+      "suggestion": null
+     }
+    ],
+    "sentences": [
+     {
+      "text": "Curcumin fights inflammation and soothes joint pain.",
+      "verdict": "block"
+     }
+    ],
+    "safe_text": ""
+   },
+   {
+    "product": "P30",
+    "name": "Ceremonial matcha",
+    "verdict": "ok",
+    "eligible_claims": 0,
+    "findings": [],
+    "sentences": [
+     {
+      "text": "Shade-grown matcha from Japan.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Calm focus in a cup.",
+      "verdict": "ok"
+     }
+    ],
+    "safe_text": "Shade-grown matcha from Japan. Calm focus in a cup."
+   },
+   {
+    "product": "P31",
+    "name": "Organic chamomile tea",
+    "verdict": "block",
+    "eligible_claims": 0,
+    "findings": [
+     {
+      "sentence": "A calming cup before bed that helps against insomnia.",
+      "verdict": "block",
+      "reason": "medicinal claim: names insomnia; food may not claim to prevent, treat or cure a disease (Reg. (EU) 1169/2011 Art. 7(3))",
+      "suggestion": null
+     }
+    ],
+    "sentences": [
+     {
+      "text": "Mild, golden chamomile blossoms.",
+      "verdict": "ok"
+     },
+     {
+      "text": "A calming cup before bed that helps against insomnia.",
+      "verdict": "block"
+     }
+    ],
+    "safe_text": "Mild, golden chamomile blossoms."
+   },
+   {
+    "product": "P32",
+    "name": "Spirulina tablets",
+    "verdict": "block",
+    "eligible_claims": 0,
+    "findings": [
+     {
+      "sentence": "Detoxes your body.",
+      "verdict": "block",
+      "reason": "no authorised claim for this product matches this wording",
+      "suggestion": null
+     }
+    ],
+    "sentences": [
+     {
+      "text": "Green superfood full of protein.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Detoxes your body.",
+      "verdict": "block"
+     }
+    ],
+    "safe_text": "Green superfood full of protein."
+   },
+   {
+    "product": "P33",
+    "name": "Pea protein vanilla",
+    "verdict": "ok",
+    "eligible_claims": 0,
+    "findings": [],
+    "sentences": [
+     {
+      "text": "21 g plant protein per serving, sweetened with stevia.",
+      "verdict": "ok"
+     }
+    ],
+    "safe_text": "21 g plant protein per serving, sweetened with stevia."
+   },
+   {
+    "product": "P34",
+    "name": "Collagen peptides",
+    "verdict": "ok",
+    "eligible_claims": 14,
+    "findings": [],
+    "sentences": [
+     {
+      "text": "Bioactive collagen peptides with vitamin C.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Vitamin C contributes to normal collagen formation for the normal function of skin.",
+      "verdict": "ok"
+     }
+    ],
+    "safe_text": "Bioactive collagen peptides with vitamin C. Vitamin C contributes to normal collagen formation for the normal function of skin."
+   },
+   {
+    "product": "P35",
+    "name": "Melatonin-free sleep drops",
+    "verdict": "ok",
+    "eligible_claims": 0,
+    "findings": [],
+    "sentences": [
+     {
+      "text": "Lavender and lemon balm for a peaceful evening.",
+      "verdict": "ok"
+     }
+    ],
+    "safe_text": "Lavender and lemon balm for a peaceful evening."
+   },
+   {
+    "product": "P36",
+    "name": "Electrolyte sport drink",
+    "verdict": "ok",
+    "eligible_claims": 28,
+    "findings": [],
+    "sentences": [
+     {
+      "text": "Magnesium contributes to electrolyte balance.",
+      "verdict": "ok"
+     },
+     {
+      "text": "Mix one scoop in 500 ml of water.",
+      "verdict": "ok"
+     }
+    ],
+    "safe_text": "Magnesium contributes to electrolyte balance. Mix one scoop in 500 ml of water."
+   },
+   {
+    "product": "P37",
+    "name": "Vitamin C 1000 mg sport",
+    "verdict": "ok",
+    "eligible_claims": 15,
+    "findings": [],
+    "sentences": [
+     {
+      "text": "Vitamin C contributes to maintain the normal function of the immune system during and after intense physical exercise.",
+      "verdict": "ok"
+     }
+    ],
+    "safe_text": "Vitamin C contributes to maintain the normal function of the immune system during and after intense physical exercise."
+   },
+   {
+    "product": "P38",
+    "name": "Prenatal complex",
+    "verdict": "block",
+    "eligible_claims": 27,
+    "findings": [
+     {
+      "sentence": "Made for pregnancy: folate, iodine, vitamin D and iron.",
+      "verdict": "block",
+      "reason": "no authorised claim for Vitamin D, Folate, Iodine, Iron matches this wording",
+      "suggestion": null
+     }
+    ],
+    "sentences": [
+     {
+      "text": "Made for pregnancy: folate, iodine, vitamin D and iron.",
+      "verdict": "block"
+     },
+     {
+      "text": "Folate contributes to maternal tissue growth during pregnancy.",
+      "verdict": "ok"
+     }
+    ],
+    "safe_text": "Folate contributes to maternal tissue growth during pregnancy."
+   },
+   {
+    "product": "P39",
+    "name": "Cod liver oil",
+    "verdict": "rewrite",
+    "eligible_claims": 10,
+    "findings": [
+     {
+      "sentence": "EPA and DHA contribute to the normal function of the heart.",
+      "verdict": "rewrite",
+      "reason": "required statement missing",
+      "suggestion": "EPA and DHA contribute to the normal function of the heart. The beneficial effect is obtained with a daily intake of 250 mg of EPA and DHA."
+     }
+    ],
+    "sentences": [
+     {
+      "text": "Traditional cod liver oil.",
+      "verdict": "ok"
+     },
+     {
+      "text": "EPA and DHA contribute to the normal function of the heart.",
+      "verdict": "rewrite"
+     }
+    ],
+    "safe_text": "Traditional cod liver oil. EPA and DHA contribute to the normal function of the heart. The beneficial effect is obtained with a daily intake of 250 mg of EPA and DHA."
+   },
+   {
+    "product": "P40",
+    "name": "Lion's mane mushroom extract",
+    "verdict": "block",
+    "eligible_claims": 0,
+    "findings": [
+     {
+      "sentence": "Medicinal mushroom for memory and focus.",
+      "verdict": "block",
+      "reason": "no authorised health claim exists for mushroom",
+      "suggestion": null
+     },
+     {
+      "sentence": "Clinically shown to improve cognition.",
+      "verdict": "block",
+      "reason": "no authorised claim for this product matches this wording",
+      "suggestion": null
+     }
+    ],
+    "sentences": [
+     {
+      "text": "Medicinal mushroom for memory and focus.",
+      "verdict": "block"
+     },
+     {
+      "text": "Clinically shown to improve cognition.",
+      "verdict": "block"
+     }
+    ],
+    "safe_text": ""
+   }
+  ]
+ },
+ "search": {
+  "k": 5,
+  "queries": 30,
+  "methods": {
+   "marketing": {
+    "recall_at_k": 0.4744,
+    "precision_at_k": 0.4467,
+    "results_without_a_lawful_claim_for_the_need": 0.4361
+   },
+   "claims": {
+    "recall_at_k": 0.84,
+    "precision_at_k": 0.8,
+    "results_without_a_lawful_claim_for_the_need": 0.18
+   },
+   "hybrid": {
+    "recall_at_k": 0.84,
+    "precision_at_k": 0.8,
+    "results_without_a_lawful_claim_for_the_need": 0.2
+   }
+  }
+ },
+ "guard": [
+  {
+   "embellish_rate": 0.2,
+   "made_up_sentences": 50,
+   "reached_customer": 0,
+   "sentences_checked": 236,
+   "rewritten": 10,
+   "blocked": 40,
+   "answers_shown": 88
+  },
+  {
+   "embellish_rate": 0.5,
+   "made_up_sentences": 104,
+   "reached_customer": 0,
+   "sentences_checked": 259,
+   "rewritten": 30,
+   "blocked": 74,
+   "answers_shown": 88
+  },
+  {
+   "embellish_rate": 0.8,
+   "made_up_sentences": 159,
+   "reached_customer": 0,
+   "sentences_checked": 268,
+   "rewritten": 45,
+   "blocked": 114,
+   "answers_shown": 88
+  }
+ ],
+ "examples": [
+  {
+   "q": "something for when I'm always tired",
+   "answers": [
+    {
+     "product": "P34",
+     "name": "Collagen peptides",
+     "text": "Collagen peptides: 1 powder a day; one pack lasts 30 days, 39.90 EUR. Vitamin C contributes to the reduction of tiredness and fatigue.",
+     "verdict": "ok"
+    },
+    {
+     "product": "P09",
+     "name": "Acerola vitamin C powder",
+     "text": "Acerola vitamin C powder: 1 powder a day; one pack lasts 100 days, 19.90 EUR. Vitamin C contributes to the reduction of tiredness and fatigue.",
+     "verdict": "ok"
+    },
+    {
+     "product": "P12",
+     "name": "Iron bisglycinate 14 mg + vitamin C",
+     "text": "Iron bisglycinate 14 mg + vitamin C: 1 capsules a day; one pack lasts 120 days, 14.90 EUR. Vitamin C contributes to the reduction of tiredness and fatigue. Iron contributes to the reduction of tiredness and fatigue.",
+     "verdict": "ok"
+    }
+   ]
+  },
+  {
+   "q": "omega 3 for my heart",
+   "answers": [
+    {
+     "product": "P21",
+     "name": "Omega-3 algae oil",
+     "text": "Omega-3 algae oil: 2 capsules a day; one pack lasts 60 days, 29.90 EUR. EPA and DHA contribute to the normal function of the heart. The beneficial effect is obtained with a daily intake of 250 mg of EPA and DHA.",
+     "verdict": "ok"
+    },
+    {
+     "product": "P24",
+     "name": "Kids omega-3 drops",
+     "text": "Kids omega-3 drops: 1 drops a day; one pack lasts 100 days, 19.90 EUR. EPA and DHA contribute to the normal function of the heart. The beneficial effect is obtained with a daily intake of 250 mg of EPA and DHA.",
+     "verdict": "ok"
+    },
+    {
+     "product": "P22",
+     "name": "Omega-3 fish oil high dose",
+     "text": "Omega-3 fish oil high dose: 4 capsules a day; one pack lasts 30 days, 34.90 EUR. EPA and DHA contribute to the normal function of the heart. The beneficial effect is obtained with a daily intake of 250 mg of EPA and DHA.",
+     "verdict": "ok"
+    }
+   ]
+  },
+  {
+   "q": "I'm pregnant, what should I take",
+   "answers": [
+    {
+     "product": "P17",
+     "name": "Folate 400 µg (methylfolate)",
+     "text": "Folate 400 µg (methylfolate): 1 capsules a day; one pack lasts 120 days, 15.90 EUR. Folate contributes to maternal tissue growth during pregnancy.",
+     "verdict": "ok"
+    },
+    {
+     "product": "P38",
+     "name": "Prenatal complex",
+     "text": "Prenatal complex: 1 capsules a day; one pack lasts 90 days, 26.90 EUR. Folate contributes to maternal tissue growth during pregnancy.",
+     "verdict": "ok"
+    },
+    {
+     "product": "P25",
+     "name": "Multivitamin complete",
+     "text": "Multivitamin complete: 2 capsules a day; one pack lasts 60 days, 27.90 EUR. Folate contributes to maternal tissue growth during pregnancy.",
+     "verdict": "ok"
+    }
+   ]
+  }
+ ]
+}

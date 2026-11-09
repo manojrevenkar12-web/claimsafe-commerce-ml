@@ -1,0 +1,43 @@
+# The same checks for a Bitbucket workspace. The deploy step compiles the Vertex AI spec and submits it only when
+# GCP credentials are configured as repository variables; nothing here was run against a live project.
+image: python:3.12
+definitions:
+  steps:
+    - step: &python
+        name: Python checks
+        caches: [pip]
+        script:
+          - export DO_NOT_TRACK=1
+          - pip install -e ".[dev]"
+          - ruff format --check src tests scripts && ruff check src tests scripts
+          - pytest -q
+          - grep -v '^#' config/heldout.lock | sha256sum -c -
+    - step: &web
+        name: Web checks
+        image: node:22
+        caches: [node]
+        script:
+          - cd web && npm ci
+          - npx tsc --noEmit && npx eslint src test && npx vitest run && npx vite build
+pipelines:
+  default:
+    - parallel:
+        - step: *python
+        - step: *web
+  branches:
+    main:
+      - parallel:
+          - step: *python
+          - step: *web
+      - step:
+          name: Submit the replenishment pipeline to Vertex AI
+          trigger: manual
+          deployment: production
+          script:
+            - pip install -e ".[gcp]"
+            - echo "$GCP_SA_KEY" > /tmp/key.json && export GOOGLE_APPLICATION_CREDENTIALS=/tmp/key.json
+            - >
+              python -c 'import os; from google.cloud import aiplatform as ai;
+              ai.init(project=os.environ["GCP_PROJECT"], location=os.environ["GCP_REGION"]);
+              ai.PipelineJob(display_name="replenishment", template_path="pipelines/replenishment.yaml",
+              pipeline_root=os.environ["PIPELINE_ROOT"]).submit()'

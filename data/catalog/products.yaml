@@ -1,0 +1,471 @@
+note: Invented catalogue; no real shop's products.
+products:
+- id: P01
+  name: Vitamin D3 1000 IU drops
+  form: drops
+  units_per_pack: 1200
+  daily_units: 1
+  price_eur: 14.9
+  category: vitamins
+  for_children: false
+  per_daily_dose:
+    vitamin_d: 25
+  marketing: Vegan vitamin D3 from lichen in MCT oil. Vitamin D contributes to the normal function of the immune system.
+- id: P02
+  name: Vitamin D3 + K2 drops
+  form: drops
+  units_per_pack: 1200
+  daily_units: 2
+  price_eur: 24.9
+  category: vitamins
+  for_children: false
+  per_daily_dose:
+    vitamin_d: 50
+    vitamin_k: 100
+  marketing: The duo for strong bones. Vitamin D3 and K2 work together so calcium ends up in your bones, not your arteries.
+- id: P03
+  name: Vitamin D3 200 IU kids drops
+  form: drops
+  units_per_pack: 600
+  daily_units: 1
+  price_eur: 11.9
+  category: vitamins
+  for_children: true
+  per_daily_dose:
+    vitamin_d: 5
+  marketing: Gentle dose for children. Supports healthy growth and strong teeth.
+- id: P04
+  name: Vitamin D3 400 IU low dose
+  form: capsules
+  units_per_pack: 120
+  daily_units: 1
+  price_eur: 9.9
+  category: vitamins
+  for_children: false
+  per_daily_dose:
+    vitamin_d: 0.5
+  marketing: A low daily dose for everyone who gets some sun. Strengthens your immune system through the winter.
+- id: P05
+  name: Magnesium bisglycinate 300 mg
+  form: capsules
+  units_per_pack: 120
+  daily_units: 2
+  price_eur: 21.9
+  category: minerals
+  for_children: false
+  per_daily_dose:
+    magnesium: 300
+  marketing: Highly bioavailable chelate. Magnesium contributes to a reduction of tiredness and fatigue.
+- id: P06
+  name: Magnesium citrate powder
+  form: powder
+  units_per_pack: 300
+  daily_units: 1
+  price_eur: 18.9
+  category: minerals
+  for_children: false
+  per_daily_dose:
+    magnesium: 400
+  marketing: Fizzy lemon drink. Relieves muscle cramps after sport and helps you sleep through the night.
+- id: P07
+  name: Magnesium trace drink
+  form: powder
+  units_per_pack: 30
+  daily_units: 1
+  price_eur: 6.9
+  category: minerals
+  for_children: false
+  per_daily_dose:
+    magnesium: 40
+  marketing: A light mineral drink with a hint of magnesium. Fights tiredness naturally.
+- id: P08
+  name: Vitamin C buffered 500 mg
+  form: capsules
+  units_per_pack: 180
+  daily_units: 1
+  price_eur: 16.9
+  category: vitamins
+  for_children: false
+  per_daily_dose:
+    vitamin_c: 500
+  marketing: Gentle on the stomach. Vitamin C contributes to normal collagen formation for the normal function of skin.
+- id: P09
+  name: Acerola vitamin C powder
+  form: powder
+  units_per_pack: 100
+  daily_units: 1
+  price_eur: 19.9
+  category: vitamins
+  for_children: false
+  per_daily_dose:
+    vitamin_c: 160
+  marketing: Natural vitamin C from acerola cherries. Protects you from colds and flu.
+- id: P10
+  name: Vitamin B12 methylcobalamin 500 µg
+  form: lozenges
+  units_per_pack: 180
+  daily_units: 1
+  price_eur: 15.9
+  category: vitamins
+  for_children: false
+  per_daily_dose:
+    vitamin_b12: 500
+  marketing: Active B12 for vegans. Vitamin B12 contributes to the reduction of tiredness and fatigue.
+- id: P11
+  name: B12 depot drops
+  form: drops
+  units_per_pack: 1000
+  daily_units: 1
+  price_eur: 17.9
+  category: vitamins
+  for_children: false
+  per_daily_dose:
+    vitamin_b12: 1000
+  marketing: Boosts your energy and cures B12 deficiency anaemia.
+- id: P12
+  name: Iron bisglycinate 14 mg + vitamin C
+  form: capsules
+  units_per_pack: 120
+  daily_units: 1
+  price_eur: 14.9
+  category: minerals
+  for_children: false
+  per_daily_dose:
+    iron: 14
+    vitamin_c: 40
+  marketing: Gentle iron with vitamin C. Iron contributes to normal formation of red blood cells and haemoglobin.
+- id: P13
+  name: Zinc picolinate 10 mg
+  form: capsules
+  units_per_pack: 120
+  daily_units: 1
+  price_eur: 12.9
+  category: minerals
+  for_children: false
+  per_daily_dose:
+    zinc: 10
+  marketing: Zinc contributes to the normal function of the immune system. Great for clear skin and against acne.
+- id: P14
+  name: Zinc 1 mg micro dose
+  form: tablets
+  units_per_pack: 90
+  daily_units: 1
+  price_eur: 5.9
+  category: minerals
+  for_children: false
+  per_daily_dose:
+    zinc: 1
+  marketing: A small daily zinc top-up for healthy hair and nails.
+- id: P15
+  name: Selenium 55 µg
+  form: capsules
+  units_per_pack: 120
+  daily_units: 1
+  price_eur: 11.9
+  category: minerals
+  for_children: false
+  per_daily_dose:
+    selenium: 55
+  marketing: Selenium contributes to the normal thyroid function.
+- id: P16
+  name: Biotin 5000 µg
+  form: tablets
+  units_per_pack: 120
+  daily_units: 1
+  price_eur: 13.9
+  category: vitamins
+  for_children: false
+  per_daily_dose:
+    biotin: 5000
+  marketing: For full, shiny hair. Biotin contributes to the maintenance of normal hair.
+- id: P17
+  name: Folate 400 µg (methylfolate)
+  form: capsules
+  units_per_pack: 120
+  daily_units: 1
+  price_eur: 15.9
+  category: vitamins
+  for_children: false
+  per_daily_dose:
+    folate: 400
+  marketing: Folate contributes to maternal tissue growth during pregnancy.
+- id: P18
+  name: Calcium from algae 400 mg
+  form: capsules
+  units_per_pack: 120
+  daily_units: 2
+  price_eur: 17.9
+  category: minerals
+  for_children: false
+  per_daily_dose:
+    calcium: 400
+  marketing: Calcium is needed for the maintenance of normal bones. Prevents osteoporosis in later life.
+- id: P19
+  name: Iodine from kelp 150 µg
+  form: capsules
+  units_per_pack: 180
+  daily_units: 1
+  price_eur: 9.9
+  category: minerals
+  for_children: false
+  per_daily_dose:
+    iodine: 150
+  marketing: Iodine contributes to the normal production of thyroid hormones and normal thyroid function.
+- id: P20
+  name: Vitamin K2 MK-7 100 µg
+  form: capsules
+  units_per_pack: 120
+  daily_units: 1
+  price_eur: 19.9
+  category: vitamins
+  for_children: false
+  per_daily_dose:
+    vitamin_k: 100
+  marketing: Vitamin K contributes to the maintenance of normal bones.
+- id: P21
+  name: Omega-3 algae oil
+  form: capsules
+  units_per_pack: 120
+  daily_units: 2
+  price_eur: 29.9
+  category: omega-3
+  for_children: false
+  per_daily_dose:
+    dha: 300
+    epa: 150
+  marketing: Vegan omega-3 from algae. DHA contributes to maintenance of normal brain function. The beneficial effect is obtained
+    with a daily intake of 250 mg of DHA.
+- id: P22
+  name: Omega-3 fish oil high dose
+  form: capsules
+  units_per_pack: 120
+  daily_units: 4
+  price_eur: 34.9
+  category: omega-3
+  for_children: false
+  per_daily_dose:
+    dha: 1200
+    epa: 1800
+  marketing: High-dose EPA and DHA. Lowers blood pressure and protects your heart.
+- id: P23
+  name: Omega-3 light
+  form: capsules
+  units_per_pack: 60
+  daily_units: 1
+  price_eur: 12.9
+  category: omega-3
+  for_children: false
+  per_daily_dose:
+    dha: 100
+    epa: 60
+  marketing: An everyday omega-3 for brain and eyes.
+- id: P24
+  name: Kids omega-3 drops
+  form: drops
+  units_per_pack: 100
+  daily_units: 1
+  price_eur: 19.9
+  category: omega-3
+  for_children: true
+  per_daily_dose:
+    dha: 260
+    epa: 90
+  marketing: DHA for growing minds.
+- id: P25
+  name: Multivitamin complete
+  form: capsules
+  units_per_pack: 120
+  daily_units: 2
+  price_eur: 27.9
+  category: vitamins
+  for_children: false
+  per_daily_dose:
+    vitamin_d: 20
+    vitamin_c: 120
+    vitamin_b12: 25
+    zinc: 5
+    selenium: 30
+    folate: 200
+    biotin: 50
+    iodine: 75
+    vitamin_k: 50
+    iron: 7
+    magnesium: 60
+    calcium: 60
+  marketing: Everything you need in two capsules a day. Your all-round protection.
+- id: P26
+  name: Immune complex C + zinc + D3
+  form: capsules
+  units_per_pack: 90
+  daily_units: 1
+  price_eur: 19.9
+  category: vitamins
+  for_children: false
+  per_daily_dose:
+    vitamin_c: 200
+    zinc: 5
+    vitamin_d: 25
+  marketing: Vitamin C, zinc and vitamin D contribute to the normal function of the immune system.
+- id: P27
+  name: Hair, skin and nails complex
+  form: capsules
+  units_per_pack: 90
+  daily_units: 1
+  price_eur: 21.9
+  category: beauty
+  for_children: false
+  per_daily_dose:
+    biotin: 150
+    zinc: 7.5
+    selenium: 40
+    vitamin_c: 80
+  marketing: Biotin, zinc and selenium for beautiful hair, skin and nails from within. Anti-ageing from the inside.
+- id: P28
+  name: Ashwagandha KSM-66 600 mg
+  form: capsules
+  units_per_pack: 120
+  daily_units: 2
+  price_eur: 24.9
+  category: botanicals
+  for_children: false
+  per_daily_dose:
+    ashwagandha_mg: 600
+  marketing: The adaptogen for stress. Ashwagandha lowers cortisol and reduces anxiety.
+- id: P29
+  name: Turmeric extract with black pepper
+  form: capsules
+  units_per_pack: 120
+  daily_units: 2
+  price_eur: 22.9
+  category: botanicals
+  for_children: false
+  per_daily_dose:
+    curcumin_mg: 500
+  marketing: Curcumin fights inflammation and soothes joint pain.
+- id: P30
+  name: Ceremonial matcha
+  form: powder
+  units_per_pack: 30
+  daily_units: 1
+  price_eur: 29.9
+  category: tea
+  for_children: false
+  per_daily_dose: {}
+  marketing: Shade-grown matcha from Japan. Calm focus in a cup.
+- id: P31
+  name: Organic chamomile tea
+  form: tea
+  units_per_pack: 40
+  daily_units: 2
+  price_eur: 7.9
+  category: tea
+  for_children: false
+  per_daily_dose: {}
+  marketing: Mild, golden chamomile blossoms. A calming cup before bed that helps against insomnia.
+- id: P32
+  name: Spirulina tablets
+  form: tablets
+  units_per_pack: 500
+  daily_units: 6
+  price_eur: 19.9
+  category: superfoods
+  for_children: false
+  per_daily_dose:
+    iron: 1.2
+  marketing: Green superfood full of protein. Detoxes your body.
+- id: P33
+  name: Pea protein vanilla
+  form: powder
+  units_per_pack: 30
+  daily_units: 1
+  price_eur: 34.9
+  category: protein
+  for_children: false
+  per_daily_dose: {}
+  marketing: 21 g plant protein per serving, sweetened with stevia.
+- id: P34
+  name: Collagen peptides
+  form: powder
+  units_per_pack: 30
+  daily_units: 1
+  price_eur: 39.9
+  category: beauty
+  for_children: false
+  per_daily_dose:
+    vitamin_c: 80
+  marketing: Bioactive collagen peptides with vitamin C. Vitamin C contributes to normal collagen formation for the normal
+    function of skin.
+- id: P35
+  name: Melatonin-free sleep drops
+  form: drops
+  units_per_pack: 30
+  daily_units: 1
+  price_eur: 16.9
+  category: botanicals
+  for_children: false
+  per_daily_dose:
+    lavender_mg: 80
+  marketing: Lavender and lemon balm for a peaceful evening.
+- id: P36
+  name: Electrolyte sport drink
+  form: powder
+  units_per_pack: 30
+  daily_units: 1
+  price_eur: 22.9
+  category: sport
+  for_children: false
+  per_daily_dose:
+    magnesium: 100
+    zinc: 2
+  marketing: Magnesium contributes to electrolyte balance. Mix one scoop in 500 ml of water.
+- id: P37
+  name: Vitamin C 1000 mg sport
+  form: tablets
+  units_per_pack: 120
+  daily_units: 1
+  price_eur: 15.9
+  category: sport
+  for_children: false
+  per_daily_dose:
+    vitamin_c: 1000
+  marketing: Vitamin C contributes to maintain the normal function of the immune system during and after intense physical
+    exercise.
+- id: P38
+  name: Prenatal complex
+  form: capsules
+  units_per_pack: 90
+  daily_units: 1
+  price_eur: 26.9
+  category: vitamins
+  for_children: false
+  per_daily_dose:
+    folate: 400
+    iodine: 150
+    vitamin_d: 20
+    iron: 14
+  marketing: 'Made for pregnancy: folate, iodine, vitamin D and iron. Folate contributes to maternal tissue growth during
+    pregnancy.'
+- id: P39
+  name: Cod liver oil
+  form: capsules
+  units_per_pack: 180
+  daily_units: 3
+  price_eur: 18.9
+  category: omega-3
+  for_children: false
+  per_daily_dose:
+    dha: 270
+    epa: 240
+    vitamin_d: 10
+  marketing: Traditional cod liver oil. EPA and DHA contribute to the normal function of the heart.
+- id: P40
+  name: Lion's mane mushroom extract
+  form: capsules
+  units_per_pack: 90
+  daily_units: 2
+  price_eur: 27.9
+  category: botanicals
+  for_children: false
+  per_daily_dose:
+    lions_mane_mg: 1000
+  marketing: Medicinal mushroom for memory and focus. Clinically shown to improve cognition.

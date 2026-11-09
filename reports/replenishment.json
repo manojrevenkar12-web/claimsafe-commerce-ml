@@ -1,0 +1,452 @@
+{
+ "world": {
+  "customers": 6000,
+  "orders": 35752,
+  "products": 32,
+  "months": 20,
+  "train_months": 12
+ },
+ "release": {
+  "rule_holdout": {
+   "n": 1549,
+   "mae_days": 11.246,
+   "within_7_days": 0.5629,
+   "reminders_on_time": 0.3241,
+   "reminders_too_late": 0.1679
+  },
+  "v1_holdout": {
+   "n": 1549,
+   "mae_days": 8.161,
+   "within_7_days": 0.643,
+   "reminders_on_time": 0.3518,
+   "reminders_too_late": 0.0394,
+   "skill": 0.7257
+  }
+ },
+ "months": [
+  {
+   "month": 13,
+   "orders": 2320,
+   "live": {
+    "n": 26,
+    "mae_days": 0.935,
+    "rule_mae_days": 5.192,
+    "skill": 0.1801,
+    "by_version": {
+     "1": {
+      "n": 26,
+      "mae_days": 0.935,
+      "skill": 0.1802
+     }
+    }
+   },
+   "psi": {
+    "channel": 0.0017,
+    "supply_days": 0.0033,
+    "last_ratio": 0.0178,
+    "customer_mean_ratio": 0.0131,
+    "subscriber": 0.0,
+    "qty": 0.0
+   },
+   "psi_alerts": [],
+   "champion": 1,
+   "actions": []
+  },
+  {
+   "month": 14,
+   "orders": 2443,
+   "live": {
+    "n": 441,
+    "mae_days": 2.347,
+    "rule_mae_days": 5.56,
+    "skill": 0.4221,
+    "by_version": {
+     "1": {
+      "n": 441,
+      "mae_days": 2.347,
+      "skill": 0.4222
+     }
+    }
+   },
+   "psi": {
+    "channel": 0.0023,
+    "supply_days": 0.0024,
+    "last_ratio": 0.0111,
+    "customer_mean_ratio": 0.0188,
+    "subscriber": 0.0,
+    "qty": 0.0
+   },
+   "psi_alerts": [],
+   "champion": 1,
+   "actions": []
+  },
+  {
+   "month": 15,
+   "orders": 2552,
+   "live": {
+    "n": 1004,
+    "mae_days": 3.252,
+    "rule_mae_days": 6.839,
+    "skill": 0.4755,
+    "by_version": {
+     "1": {
+      "n": 1004,
+      "mae_days": 3.252,
+      "skill": 0.4755
+     }
+    }
+   },
+   "psi": {
+    "channel": 0.6663,
+    "supply_days": 0.0012,
+    "last_ratio": 0.0103,
+    "customer_mean_ratio": 0.0172,
+    "subscriber": 0.0,
+    "qty": 0.0
+   },
+   "psi_alerts": [
+    "channel"
+   ],
+   "champion": 1,
+   "actions": []
+  },
+  {
+   "month": 16,
+   "orders": 2583,
+   "live": {
+    "n": 1316,
+    "mae_days": 4.053,
+    "rule_mae_days": 9.013,
+    "skill": 0.4497,
+    "by_version": {
+     "1": {
+      "n": 1316,
+      "mae_days": 4.053,
+      "skill": 0.4497
+     }
+    }
+   },
+   "psi": {
+    "channel": 0.9992,
+    "supply_days": 0.0037,
+    "last_ratio": 0.0228,
+    "customer_mean_ratio": 0.0137,
+    "subscriber": 0.0,
+    "qty": 0.0
+   },
+   "psi_alerts": [
+    "channel"
+   ],
+   "champion": 2,
+   "actions": [
+    "retrained: v2 promoted (holdout MAE 7.2 vs 10.0)"
+   ]
+  },
+  {
+   "month": 17,
+   "orders": 2574,
+   "live": {
+    "n": 1565,
+    "mae_days": 6.656,
+    "rule_mae_days": 11.504,
+    "skill": 0.5786,
+    "by_version": {
+     "1": {
+      "n": 1532,
+      "mae_days": 5.918,
+      "skill": 0.5086
+     },
+     "3": {
+      "n": 33,
+      "mae_days": 40.921,
+      "skill": 7.544
+     }
+    }
+   },
+   "psi": {
+    "channel": 1.1777,
+    "supply_days": 0.0065,
+    "last_ratio": 0.0839,
+    "customer_mean_ratio": 0.0453,
+    "subscriber": 0.0,
+    "qty": 0.0
+   },
+   "psi_alerts": [
+    "channel"
+   ],
+   "champion": 3,
+   "actions": [
+    "v3 deployed without the gate"
+   ]
+  },
+  {
+   "month": 18,
+   "orders": 2512,
+   "live": {
+    "n": 1668,
+    "mae_days": 14.567,
+    "rule_mae_days": 14.683,
+    "skill": 0.9921,
+    "by_version": {
+     "1": {
+      "n": 1320,
+      "mae_days": 9.446,
+      "skill": 0.5656
+     },
+     "3": {
+      "n": 348,
+      "mae_days": 33.992,
+      "skill": 4.8401
+     }
+    }
+   },
+   "psi": {
+    "channel": 1.3044,
+    "supply_days": 0.0022,
+    "last_ratio": 0.2126,
+    "customer_mean_ratio": 0.0659,
+    "subscriber": 0.0,
+    "qty": 0.0
+   },
+   "psi_alerts": [
+    "channel",
+    "last_ratio"
+   ],
+   "champion": 4,
+   "actions": [
+    "rolled back v3 to v2",
+    "retrained: v4 promoted (holdout MAE 8.2 vs 10.0)"
+   ]
+  },
+  {
+   "month": 19,
+   "orders": 2328,
+   "live": {
+    "n": 1708,
+    "mae_days": 18.544,
+    "rule_mae_days": 17.69,
+    "skill": 1.0483,
+    "by_version": {
+     "1": {
+      "n": 926,
+      "mae_days": 15.689,
+      "skill": 0.642
+     },
+     "3": {
+      "n": 745,
+      "mae_days": 22.958,
+      "skill": 2.3131
+     },
+     "4": {
+      "n": 37,
+      "mae_days": 1.137,
+      "skill": 0.2179
+     }
+    }
+   },
+   "psi": {
+    "channel": 1.3664,
+    "supply_days": 0.0034,
+    "last_ratio": 0.4041,
+    "customer_mean_ratio": 0.172,
+    "subscriber": 0.0,
+    "qty": 0.0
+   },
+   "psi_alerts": [
+    "channel",
+    "last_ratio"
+   ],
+   "champion": 4,
+   "actions": []
+  },
+  {
+   "month": 20,
+   "orders": 1974,
+   "live": {
+    "n": 1887,
+    "mae_days": 17.172,
+    "rule_mae_days": 20.517,
+    "skill": 0.837,
+    "by_version": {
+     "1": {
+      "n": 702,
+      "mae_days": 22.576,
+      "skill": 0.7114
+     },
+     "3": {
+      "n": 848,
+      "mae_days": 18.58,
+      "skill": 1.1276
+     },
+     "4": {
+      "n": 337,
+      "mae_days": 2.369,
+      "skill": 0.3241
+     }
+    }
+   },
+   "psi": {
+    "channel": 0.6223,
+    "supply_days": 0.0043,
+    "last_ratio": 0.4961,
+    "customer_mean_ratio": 0.2353,
+    "subscriber": 0.0,
+    "qty": 0.0
+   },
+   "psi_alerts": [
+    "channel",
+    "last_ratio",
+    "customer_mean_ratio"
+   ],
+   "champion": 5,
+   "actions": [
+    "retrained: v5 promoted (holdout MAE 10.2 vs 13.9)"
+   ]
+  }
+ ],
+ "served_mae_days": 11.279,
+ "served_rule_mae_days": 13.805,
+ "versions": [
+  {
+   "version": 1,
+   "status": "retired",
+   "trained_through_day": 360,
+   "reason": "MAE 8.161 vs 11.246 for the pack-size rule",
+   "release_metrics": {
+    "n": 1549,
+    "mae_days": 8.161,
+    "within_7_days": 0.643,
+    "reminders_on_time": 0.3518,
+    "reminders_too_late": 0.0394,
+    "skill": 0.7257
+   },
+   "data_fingerprint": "83ec479fb947366e",
+   "model_sha256": "85c748feced2ccad",
+   "training_customers": 2321
+  },
+  {
+   "version": 2,
+   "status": "retired",
+   "trained_through_day": 480,
+   "reason": "retrain (drift in channel for 2 months); holdout MAE 7.2 vs champion 10.0",
+   "release_metrics": {
+    "n": 1910,
+    "mae_days": 7.24,
+    "within_7_days": 0.7236,
+    "reminders_on_time": 0.5141,
+    "reminders_too_late": 0.0675,
+    "skill": 0.5675
+   },
+   "data_fingerprint": "564954d0c66c0785",
+   "model_sha256": "ec0d0bea631f033d",
+   "training_customers": 3585
+  },
+  {
+   "version": 3,
+   "status": "rolled_back",
+   "trained_through_day": 480,
+   "reason": "hotfix release that skipped the gate",
+   "release_metrics": {},
+   "data_fingerprint": "corrupted",
+   "model_sha256": "473060dffa7edf0b",
+   "training_customers": 0
+  },
+  {
+   "version": 4,
+   "status": "retired",
+   "trained_through_day": 540,
+   "reason": "retrain (drift in channel, last_ratio for 2 months); holdout MAE 8.2 vs champion 10.0",
+   "release_metrics": {
+    "n": 1843,
+    "mae_days": 8.19,
+    "within_7_days": 0.6337,
+    "reminders_on_time": 0.4612,
+    "reminders_too_late": 0.051,
+    "skill": 0.4941
+   },
+   "data_fingerprint": "7e340319d250107f",
+   "model_sha256": "12bc366067432e63",
+   "training_customers": 4131
+  },
+  {
+   "version": 5,
+   "status": "champion",
+   "trained_through_day": 600,
+   "reason": "retrain (drift in channel, last_ratio, customer_mean_ratio for 2 months); holdout MAE 10.2 vs champion 13.9",
+   "release_metrics": {
+    "n": 1964,
+    "mae_days": 10.15,
+    "within_7_days": 0.5677,
+    "reminders_on_time": 0.4226,
+    "reminders_too_late": 0.0331,
+    "skill": 0.4712
+   },
+   "data_fingerprint": "dd57317e3d6951be",
+   "model_sha256": "be1ffbb1f7bc3da9",
+   "training_customers": 4562
+  }
+ ],
+ "events": [
+  {
+   "day": 360,
+   "event": "registered",
+   "version": 1,
+   "detail": "champion: MAE 8.161 vs 11.246 for the pack-size rule"
+  },
+  {
+   "day": 480,
+   "event": "registered",
+   "version": 2,
+   "detail": "challenger: retrain (drift in channel for 2 months); holdout MAE 7.2 vs champion 10.0"
+  },
+  {
+   "day": 480,
+   "event": "promoted",
+   "version": 2,
+   "detail": "passed the gate"
+  },
+  {
+   "day": 480,
+   "event": "registered",
+   "version": 3,
+   "detail": "challenger: hotfix release that skipped the gate"
+  },
+  {
+   "day": 480,
+   "event": "promoted",
+   "version": 3,
+   "detail": "deployed without the gate (rehearsal of a bad release)"
+  },
+  {
+   "day": 540,
+   "event": "rolled back",
+   "version": 3,
+   "detail": "live error 4.84x the rule's vs 0.57x for v2 at release; champion is v2 again"
+  },
+  {
+   "day": 540,
+   "event": "registered",
+   "version": 4,
+   "detail": "challenger: retrain (drift in channel, last_ratio for 2 months); holdout MAE 8.2 vs champion 10.0"
+  },
+  {
+   "day": 540,
+   "event": "promoted",
+   "version": 4,
+   "detail": "passed the gate"
+  },
+  {
+   "day": 600,
+   "event": "registered",
+   "version": 5,
+   "detail": "challenger: retrain (drift in channel, last_ratio, customer_mean_ratio for 2 months); holdout MAE 10.2 vs champion 13.9"
+  },
+  {
+   "day": 600,
+   "event": "promoted",
+   "version": 5,
+   "detail": "passed the gate"
+  }
+ ],
+ "seconds": 6.0
+}

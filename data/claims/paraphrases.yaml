@@ -1,0 +1,3 @@
+# Wordings compliance has approved as having the same meaning as an authorised claim. Each entry maps an exact,
+# lower-case sentence (without final punctuation) to a register claim id. Empty until someone signs one off.
+approved: {}

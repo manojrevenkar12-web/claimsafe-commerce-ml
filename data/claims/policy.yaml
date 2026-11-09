@@ -1,0 +1,63 @@
+# Vocabulary the claim checker uses to recognise health claims. Owned by compliance; changes are reviewed like code.
+# A sentence makes a health claim when it names a body function or condition AND links the product to it, by a verb
+# or by a phrase such as "for strong bones" (Regulation (EC) No 1924/2006, Art. 2(2)(5): "states, suggests or implies").
+
+link_verbs: [contribute, contributes, support, supports, boost, boosts, strengthen, strengthens, help, helps, promote,
+  promotes, improve, improves, maintain, maintains, enhance, enhances, protect, protects, fight, fights, reduce, reduces,
+  lower, lowers, relieve, relieves, soothe, soothes, prevent, prevents, cure, cures, treat, treats, heal, heals, combat,
+  combats, detox, detoxes, increase, increases, work, works, keep, keeps, care, cares, needed, essential, important,
+  role, regulate, regulates, balance, balances, nourish, nourishes, recharge, recharges, restore, restores, say]
+
+link_phrases: ["for ", "from within", "from the inside", "against ", "thank you", "goodbye to", "no more "]
+
+function_terms: [immune, immunity, defences, defenses, bone, bones, teeth, tooth, muscle, muscles, energy, tired,
+  tiredness, fatigue, nervous, brain, cognitive, cognition, memory, focus, vision, eyes, eye, sight, heart, blood,
+  pressure, skin, hair, nails, thyroid, sleep, stress, mood, psychological, mind, collagen, cartilage, gums,
+  digestion, digestive, joints, joint, inflammation, cholesterol, metabolism, pregnancy, fertility, testosterone,
+  hormones, growth, ageing, aging, cell, cells, oxidative, haemoglobin, hemoglobin, cramps, recovery, colds, cold,
+  flu, anxiety, cortisol, triglyceride, triglycerides, calcium, iron, homocysteine, clotting, electrolyte, vitality,
+  protection, body, health, healthy, beautiful, strong, red]
+
+# Naming a disease in a claim makes it a medicinal claim, which no food may make
+# (Regulation (EU) No 1169/2011, Art. 7(3)).
+disease_terms: [cold, colds, flu, influenza, infection, infections, anaemia, anemia, osteoporosis, cancer, diabetes,
+  depression, anxiety, insomnia, arthritis, alzheimer, dementia, hypertension, acne, eczema, migraine, covid,
+  deficiency, inflammation, pain, cramps, disease, illness]
+
+# Substances with no authorised health claim (many botanical claims are still "on hold").
+no_claim_substances: [ashwagandha, turmeric, curcumin, "lion's mane", mushroom, lavender, "lemon balm", chamomile,
+  spirulina, matcha, collagen, protein, adaptogen, cod liver oil, algae oil]
+
+# Paraphrase words mapped to the register's vocabulary before claims are compared.
+synonyms:
+  immunity: immune
+  defences: immune
+  defenses: immune
+  tired: tiredness
+  eyes: vision
+  eye: vision
+  sight: vision
+  memory: cognitive
+  cognition: cognitive
+  mind: psychological
+  mood: psychological
+  muscles: muscle
+  bone: bones
+  tooth: teeth
+  hemoglobin: haemoglobin
+  aging: ageing
+  thyroid: thyroid
+  triglycerides: triglyceride
+  pregnant: pregnancy
+  exhausted: tiredness
+  eyesight: vision
+  nerves: nervous
+
+# Words that carry no function meaning when comparing a sentence with an authorised claim.
+generic_terms: [contributes, contribute, contributing, normal, function, functioning, maintenance, maintain, has, role,
+  process, the, of, to, a, an, and, for, is, needed, in, your, our, you, with, from, this, that, it, its, are, be, by,
+  on, at, as, or, during, after, every, day, daily, naturally, natural, healthy, strong, good, great, beautiful, all,
+  supports, support, boosts, boost, strengthens, strengthen, helps, help, promotes, improves, keeps, keep, works]
+
+# Words that imply a health effect on their own, without a linking verb ("Your all-round protection.").
+standalone_claim_terms: [protection, vitality, detox, detoxes, anti-ageing, anti-aging, adaptogen, immunity, wellbeing]

@@ -1,0 +1,429 @@
+# PIPELINE DEFINITION
+# Name: replenishment-run-out
+# Description: Features, training, evaluation, gate, registration.
+# Inputs:
+#    as_of_day: int [Default: 360.0]
+#    dataset: str [Default: 'commerce']
+#    project: str [Default: '']
+#    region: str [Default: 'europe-west3']
+#    source: str [Default: 'bigquery']
+components:
+  comp-build-features:
+    executorLabel: exec-build-features
+    inputDefinitions:
+      artifacts:
+        orders:
+          artifactType:
+            schemaTitle: system.Dataset
+            schemaVersion: 0.0.1
+    outputDefinitions:
+      artifacts:
+        features:
+          artifactType:
+            schemaTitle: system.Dataset
+            schemaVersion: 0.0.1
+      parameters:
+        Output:
+          parameterType: STRING
+  comp-condition-1:
+    dag:
+      tasks:
+        register:
+          cachingOptions:
+            enableCache: true
+          componentRef:
+            name: comp-register
+          inputs:
+            artifacts:
+              model:
+                componentInputArtifact: pipelinechannel--train-model
+            parameters:
+              project:
+                componentInputParameter: pipelinechannel--project
+              region:
+                componentInputParameter: pipelinechannel--region
+          taskInfo:
+            name: register
+    inputDefinitions:
+      artifacts:
+        pipelinechannel--train-model:
+          artifactType:
+            schemaTitle: system.Model
+            schemaVersion: 0.0.1
+      parameters:
+        pipelinechannel--evaluate-Output:
+          parameterType: BOOLEAN
+        pipelinechannel--project:
+          parameterType: STRING
+        pipelinechannel--region:
+          parameterType: STRING
+  comp-evaluate:
+    executorLabel: exec-evaluate
+    inputDefinitions:
+      artifacts:
+        features:
+          artifactType:
+            schemaTitle: system.Dataset
+            schemaVersion: 0.0.1
+        model:
+          artifactType:
+            schemaTitle: system.Model
+            schemaVersion: 0.0.1
+      parameters:
+        as_of_day:
+          parameterType: NUMBER_INTEGER
+    outputDefinitions:
+      artifacts:
+        metrics:
+          artifactType:
+            schemaTitle: system.Metrics
+            schemaVersion: 0.0.1
+      parameters:
+        Output:
+          parameterType: BOOLEAN
+  comp-extract-orders:
+    executorLabel: exec-extract-orders
+    inputDefinitions:
+      parameters:
+        dataset:
+          parameterType: STRING
+        project:
+          parameterType: STRING
+        source:
+          parameterType: STRING
+    outputDefinitions:
+      artifacts:
+        orders:
+          artifactType:
+            schemaTitle: system.Dataset
+            schemaVersion: 0.0.1
+      parameters:
+        Output:
+          parameterType: STRING
+  comp-register:
+    executorLabel: exec-register
+    inputDefinitions:
+      artifacts:
+        model:
+          artifactType:
+            schemaTitle: system.Model
+            schemaVersion: 0.0.1
+      parameters:
+        project:
+          parameterType: STRING
+        region:
+          parameterType: STRING
+    outputDefinitions:
+      parameters:
+        Output:
+          parameterType: STRING
+  comp-train:
+    executorLabel: exec-train
+    inputDefinitions:
+      artifacts:
+        features:
+          artifactType:
+            schemaTitle: system.Dataset
+            schemaVersion: 0.0.1
+      parameters:
+        as_of_day:
+          parameterType: NUMBER_INTEGER
+    outputDefinitions:
+      artifacts:
+        model:
+          artifactType:
+            schemaTitle: system.Model
+            schemaVersion: 0.0.1
+      parameters:
+        Output:
+          parameterType: STRING
+deploymentSpec:
+  executors:
+    exec-build-features:
+      container:
+        args:
+        - --executor_input
+        - '{{$}}'
+        - --function_to_execute
+        - build_features
+        command:
+        - sh
+        - -c
+        - "\nif ! [ -x \"$(command -v pip)\" ]; then\n    python3 -m ensurepip ||\
+          \ python3 -m ensurepip --user || apt-get install python3-pip\nfi\n\nPIP_DISABLE_PIP_VERSION_CHECK=1\
+          \ python3 -m pip install --quiet --no-warn-script-location 'kfp==2.18.0'\
+          \ '--no-deps' 'typing-extensions>=3.7.4,<5; python_version<\"3.9\"' && \"\
+          $0\" \"$@\"\n"
+        - sh
+        - -ec
+        - 'program_path=$(mktemp -d)
+
+
+          printf "%s" "$0" > "$program_path/ephemeral_component.py"
+
+          _KFP_RUNTIME=true python3 -m kfp.dsl.executor_main                         --component_module_path                         "$program_path/ephemeral_component.py"                         "$@"
+
+          '
+        - "\nimport kfp\nfrom kfp import dsl\nfrom kfp.dsl import *\nfrom typing import\
+          \ *\n\ndef build_features(orders: dsl.Input[dsl.Dataset], features: dsl.Output[dsl.Dataset])\
+          \ -> str:\n    from claimsafe.pipeline import steps\n\n    return str(steps.build_features(orders.path,\
+          \ features.path))\n\n"
+        image: europe-west3-docker.pkg.dev/PROJECT/claimsafe/claimsafe:latest
+    exec-evaluate:
+      container:
+        args:
+        - --executor_input
+        - '{{$}}'
+        - --function_to_execute
+        - evaluate
+        command:
+        - sh
+        - -c
+        - "\nif ! [ -x \"$(command -v pip)\" ]; then\n    python3 -m ensurepip ||\
+          \ python3 -m ensurepip --user || apt-get install python3-pip\nfi\n\nPIP_DISABLE_PIP_VERSION_CHECK=1\
+          \ python3 -m pip install --quiet --no-warn-script-location 'kfp==2.18.0'\
+          \ '--no-deps' 'typing-extensions>=3.7.4,<5; python_version<\"3.9\"' && \"\
+          $0\" \"$@\"\n"
+        - sh
+        - -ec
+        - 'program_path=$(mktemp -d)
+
+
+          printf "%s" "$0" > "$program_path/ephemeral_component.py"
+
+          _KFP_RUNTIME=true python3 -m kfp.dsl.executor_main                         --component_module_path                         "$program_path/ephemeral_component.py"                         "$@"
+
+          '
+        - "\nimport kfp\nfrom kfp import dsl\nfrom kfp.dsl import *\nfrom typing import\
+          \ *\n\ndef evaluate(\n    features: dsl.Input[dsl.Dataset], model: dsl.Input[dsl.Model],\
+          \ as_of_day: int, metrics: dsl.Output[dsl.Metrics]\n) -> bool:\n    import\
+          \ json\n\n    from claimsafe.pipeline import steps\n\n    res = steps.evaluate(features.path,\
+          \ model.path, as_of_day, metrics.path + \".json\")\n    for k, v in res[\"\
+          challenger\"].items():\n        metrics.log_metric(f\"challenger_{k}\",\
+          \ v)\n    for k, v in res[\"rule\"].items():\n        metrics.log_metric(f\"\
+          rule_{k}\", v)\n    del json\n    return steps.gate(metrics.path + \".json\"\
+          )\n\n"
+        image: europe-west3-docker.pkg.dev/PROJECT/claimsafe/claimsafe:latest
+    exec-extract-orders:
+      container:
+        args:
+        - --executor_input
+        - '{{$}}'
+        - --function_to_execute
+        - extract_orders
+        command:
+        - sh
+        - -c
+        - "\nif ! [ -x \"$(command -v pip)\" ]; then\n    python3 -m ensurepip ||\
+          \ python3 -m ensurepip --user || apt-get install python3-pip\nfi\n\nPIP_DISABLE_PIP_VERSION_CHECK=1\
+          \ python3 -m pip install --quiet --no-warn-script-location 'kfp==2.18.0'\
+          \ '--no-deps' 'typing-extensions>=3.7.4,<5; python_version<\"3.9\"' && \"\
+          $0\" \"$@\"\n"
+        - sh
+        - -ec
+        - 'program_path=$(mktemp -d)
+
+
+          printf "%s" "$0" > "$program_path/ephemeral_component.py"
+
+          _KFP_RUNTIME=true python3 -m kfp.dsl.executor_main                         --component_module_path                         "$program_path/ephemeral_component.py"                         "$@"
+
+          '
+        - "\nimport kfp\nfrom kfp import dsl\nfrom kfp.dsl import *\nfrom typing import\
+          \ *\n\ndef extract_orders(source: str, project: str, dataset: str, orders:\
+          \ dsl.Output[dsl.Dataset]) -> str:\n    from claimsafe.pipeline import steps\n\
+          \n    return str(steps.extract_orders(orders.path, source, project, dataset))\n\
+          \n"
+        image: europe-west3-docker.pkg.dev/PROJECT/claimsafe/claimsafe:latest
+    exec-register:
+      container:
+        args:
+        - --executor_input
+        - '{{$}}'
+        - --function_to_execute
+        - register
+        command:
+        - sh
+        - -c
+        - "\nif ! [ -x \"$(command -v pip)\" ]; then\n    python3 -m ensurepip ||\
+          \ python3 -m ensurepip --user || apt-get install python3-pip\nfi\n\nPIP_DISABLE_PIP_VERSION_CHECK=1\
+          \ python3 -m pip install --quiet --no-warn-script-location 'kfp==2.18.0'\
+          \ '--no-deps' 'typing-extensions>=3.7.4,<5; python_version<\"3.9\"' && \"\
+          $0\" \"$@\"\n"
+        - sh
+        - -ec
+        - 'program_path=$(mktemp -d)
+
+
+          printf "%s" "$0" > "$program_path/ephemeral_component.py"
+
+          _KFP_RUNTIME=true python3 -m kfp.dsl.executor_main                         --component_module_path                         "$program_path/ephemeral_component.py"                         "$@"
+
+          '
+        - "\nimport kfp\nfrom kfp import dsl\nfrom kfp.dsl import *\nfrom typing import\
+          \ *\n\ndef register(model: dsl.Input[dsl.Model], project: str, region: str)\
+          \ -> str:\n    \"\"\"Upload to the Vertex AI Model Registry as a new version;\
+          \ serving promotion is a separate, gated step.\"\"\"\n    if not project:\n\
+          \        return \"skipped: no project\"\n    from google.cloud import aiplatform\n\
+          \n    aiplatform.init(project=project, location=region)\n    m = aiplatform.Model.upload(\n\
+          \        display_name=\"replenishment-run-out\",\n        artifact_uri=model.uri.rsplit(\"\
+          /\", 1)[0],\n        serving_container_image_uri=IMAGE.replace(\":latest\"\
+          , \"-serve:latest\"),\n    )\n    return m.resource_name\n\n"
+        image: europe-west3-docker.pkg.dev/PROJECT/claimsafe/claimsafe:latest
+    exec-train:
+      container:
+        args:
+        - --executor_input
+        - '{{$}}'
+        - --function_to_execute
+        - train
+        command:
+        - sh
+        - -c
+        - "\nif ! [ -x \"$(command -v pip)\" ]; then\n    python3 -m ensurepip ||\
+          \ python3 -m ensurepip --user || apt-get install python3-pip\nfi\n\nPIP_DISABLE_PIP_VERSION_CHECK=1\
+          \ python3 -m pip install --quiet --no-warn-script-location 'kfp==2.18.0'\
+          \ '--no-deps' 'typing-extensions>=3.7.4,<5; python_version<\"3.9\"' && \"\
+          $0\" \"$@\"\n"
+        - sh
+        - -ec
+        - 'program_path=$(mktemp -d)
+
+
+          printf "%s" "$0" > "$program_path/ephemeral_component.py"
+
+          _KFP_RUNTIME=true python3 -m kfp.dsl.executor_main                         --component_module_path                         "$program_path/ephemeral_component.py"                         "$@"
+
+          '
+        - "\nimport kfp\nfrom kfp import dsl\nfrom kfp.dsl import *\nfrom typing import\
+          \ *\n\ndef train(features: dsl.Input[dsl.Dataset], as_of_day: int, model:\
+          \ dsl.Output[dsl.Model]) -> str:\n    from claimsafe.pipeline import steps\n\
+          \n    return str(steps.train(features.path, model.path, as_of_day))\n\n"
+        image: europe-west3-docker.pkg.dev/PROJECT/claimsafe/claimsafe:latest
+pipelineInfo:
+  description: Features, training, evaluation, gate, registration.
+  name: replenishment-run-out
+root:
+  dag:
+    tasks:
+      build-features:
+        cachingOptions:
+          enableCache: true
+        componentRef:
+          name: comp-build-features
+        dependentTasks:
+        - extract-orders
+        inputs:
+          artifacts:
+            orders:
+              taskOutputArtifact:
+                outputArtifactKey: orders
+                producerTask: extract-orders
+        taskInfo:
+          name: build-features
+      condition-1:
+        componentRef:
+          name: comp-condition-1
+        dependentTasks:
+        - evaluate
+        - train
+        inputs:
+          artifacts:
+            pipelinechannel--train-model:
+              taskOutputArtifact:
+                outputArtifactKey: model
+                producerTask: train
+          parameters:
+            pipelinechannel--evaluate-Output:
+              taskOutputParameter:
+                outputParameterKey: Output
+                producerTask: evaluate
+            pipelinechannel--project:
+              componentInputParameter: project
+            pipelinechannel--region:
+              componentInputParameter: region
+        taskInfo:
+          name: passes-gate
+        triggerPolicy:
+          condition: inputs.parameter_values['pipelinechannel--evaluate-Output'] ==
+            true
+      evaluate:
+        cachingOptions:
+          enableCache: true
+        componentRef:
+          name: comp-evaluate
+        dependentTasks:
+        - build-features
+        - train
+        inputs:
+          artifacts:
+            features:
+              taskOutputArtifact:
+                outputArtifactKey: features
+                producerTask: build-features
+            model:
+              taskOutputArtifact:
+                outputArtifactKey: model
+                producerTask: train
+          parameters:
+            as_of_day:
+              componentInputParameter: as_of_day
+        taskInfo:
+          name: evaluate
+      extract-orders:
+        cachingOptions:
+          enableCache: true
+        componentRef:
+          name: comp-extract-orders
+        inputs:
+          parameters:
+            dataset:
+              componentInputParameter: dataset
+            project:
+              componentInputParameter: project
+            source:
+              componentInputParameter: source
+        taskInfo:
+          name: extract-orders
+      train:
+        cachingOptions:
+          enableCache: true
+        componentRef:
+          name: comp-train
+        dependentTasks:
+        - build-features
+        inputs:
+          artifacts:
+            features:
+              taskOutputArtifact:
+                outputArtifactKey: features
+                producerTask: build-features
+          parameters:
+            as_of_day:
+              componentInputParameter: as_of_day
+        taskInfo:
+          name: train
+  inputDefinitions:
+    parameters:
+      as_of_day:
+        defaultValue: 360.0
+        isOptional: true
+        parameterType: NUMBER_INTEGER
+      dataset:
+        defaultValue: commerce
+        isOptional: true
+        parameterType: STRING
+      project:
+        defaultValue: ''
+        isOptional: true
+        parameterType: STRING
+      region:
+        defaultValue: europe-west3
+        isOptional: true
+        parameterType: STRING
+      source:
+        defaultValue: bigquery
+        isOptional: true
+        parameterType: STRING
+schemaVersion: 2.1.0
+sdkVersion: kfp-2.18.0

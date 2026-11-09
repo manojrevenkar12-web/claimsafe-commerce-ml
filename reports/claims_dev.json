@@ -1,0 +1,29 @@
+{
+ "set": "dev",
+ "items": 53,
+ "not_allowed": 25,
+ "allowed": 28,
+ "accuracy": 1.0,
+ "accuracy_ci95": [
+  0.9324,
+  1.0
+ ],
+ "false_passes": 0,
+ "false_pass_rate": 0.0,
+ "false_pass_rate_ci95": [
+  0.0,
+  0.1332
+ ],
+ "false_flags": 0,
+ "false_flag_rate": 0.0,
+ "false_flag_rate_ci95": [
+  0.0,
+  0.1206
+ ],
+ "errors": [],
+ "verdicts": {
+  "ok": 28,
+  "rewrite": 5,
+  "block": 20
+ }
+}

@@ -1,0 +1,56 @@
+# Development set: sentences the checker was built and tuned against. Label: may this text be shown to a customer
+# for this product as written? Labels by Claude from the regulation text, not by a lawyer.
+items:
+  - {product: P01, text: "Vitamin D contributes to the normal function of the immune system.", allowed: true}
+  - {product: P01, text: "Vegan vitamin D3 from lichen in MCT oil.", allowed: true}
+  - {product: P01, text: "Vitamin D boosts your immune system.", allowed: false}
+  - {product: P01, text: "Vitamin D prevents colds and flu.", allowed: false}
+  - {product: P04, text: "Vitamin D contributes to the normal function of the immune system.", allowed: false}
+  - {product: P04, text: "A low daily dose for everyone who gets some sun.", allowed: true}
+  - {product: P02, text: "Vitamin D contributes to the maintenance of normal bones.", allowed: true}
+  - {product: P02, text: "Vitamin K contributes to the maintenance of normal bones.", allowed: true}
+  - {product: P02, text: "The duo for strong bones.", allowed: false}
+  - {product: P05, text: "Magnesium contributes to a reduction of tiredness and fatigue.", allowed: true}
+  - {product: P05, text: "Magnesium contributes to normal muscle function.", allowed: true}
+  - {product: P05, text: "Highly bioavailable chelate.", allowed: true}
+  - {product: P05, text: "Magnesium helps you sleep better.", allowed: false}
+  - {product: P06, text: "Relieves muscle cramps after sport.", allowed: false}
+  - {product: P07, text: "Magnesium contributes to a reduction of tiredness and fatigue.", allowed: false}
+  - {product: P07, text: "Fights tiredness naturally.", allowed: false}
+  - {product: P08, text: "Vitamin C contributes to normal collagen formation for the normal function of skin.", allowed: true}
+  - {product: P08, text: "Gentle on the stomach.", allowed: true}
+  - {product: P09, text: "Protects you from colds and flu.", allowed: false}
+  - {product: P09, text: "Vitamin C contributes to the reduction of tiredness and fatigue.", allowed: true}
+  - {product: P10, text: "Vitamin B12 contributes to the reduction of tiredness and fatigue.", allowed: true}
+  - {product: P10, text: "Active B12 for vegans.", allowed: true}
+  - {product: P11, text: "Cures B12 deficiency anaemia.", allowed: false}
+  - {product: P11, text: "Boosts your energy.", allowed: false}
+  - {product: P12, text: "Iron contributes to normal formation of red blood cells and haemoglobin.", allowed: true}
+  - {product: P12, text: "Iron contributes to the reduction of tiredness and fatigue.", allowed: true}
+  - {product: P13, text: "Zinc contributes to the normal function of the immune system.", allowed: true}
+  - {product: P13, text: "Great for clear skin and against acne.", allowed: false}
+  - {product: P14, text: "Zinc contributes to the maintenance of normal hair.", allowed: false}
+  - {product: P15, text: "Selenium contributes to the normal thyroid function.", allowed: true}
+  - {product: P16, text: "For full, shiny hair.", allowed: false}
+  - {product: P16, text: "Biotin contributes to the maintenance of normal hair.", allowed: true}
+  - {product: P17, text: "Folate contributes to maternal tissue growth during pregnancy.", allowed: true}
+  - {product: P18, text: "Prevents osteoporosis in later life.", allowed: false}
+  - {product: P18, text: "Calcium is needed for the maintenance of normal bones.", allowed: true}
+  - {product: P19, text: "Iodine contributes to the normal production of thyroid hormones and normal thyroid function.", allowed: true}
+  - {product: P21, text: "DHA contributes to maintenance of normal brain function. The beneficial effect is obtained with a daily intake of 250 mg of DHA.", allowed: true}
+  - {product: P21, text: "DHA contributes to maintenance of normal brain function.", allowed: false}
+  - {product: P22, text: "Lowers blood pressure and protects your heart.", allowed: false}
+  - {product: P23, text: "An everyday omega-3 for brain and eyes.", allowed: false}
+  - {product: P25, text: "Everything you need in two capsules a day.", allowed: true}
+  - {product: P25, text: "Your all-round protection.", allowed: false}
+  - {product: P26, text: "Vitamin C, zinc and vitamin D contribute to the normal function of the immune system.", allowed: true}
+  - {product: P28, text: "Ashwagandha lowers cortisol and reduces anxiety.", allowed: false}
+  - {product: P28, text: "The adaptogen for stress.", allowed: false}
+  - {product: P29, text: "Curcumin fights inflammation and soothes joint pain.", allowed: false}
+  - {product: P30, text: "Shade-grown matcha from Japan.", allowed: true}
+  - {product: P31, text: "A calming cup before bed that helps against insomnia.", allowed: false}
+  - {product: P32, text: "Detoxes your body.", allowed: false}
+  - {product: P33, text: "21 g plant protein per serving, sweetened with stevia.", allowed: true}
+  - {product: P36, text: "Magnesium contributes to electrolyte balance.", allowed: true}
+  - {product: P37, text: "Vitamin C contributes to maintain the normal function of the immune system during and after intense physical exercise.", allowed: true}
+  - {product: P40, text: "Clinically shown to improve cognition.", allowed: false}

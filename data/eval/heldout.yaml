@@ -1,0 +1,73 @@
+# Held-out set: written and hashed (config/heldout.lock) before the checker was run on it, in styles the dev set does
+# not use: chat answers, newsletter lines, social posts, label text. Same labelling rule and labeller as dev.
+items:
+  - {product: P01, text: "Take one drop a day with a meal.", allowed: true}
+  - {product: P01, text: "Your immune system will thank you this winter.", allowed: false}
+  - {product: P01, text: "Vitamin D contributes to the maintenance of normal muscle function.", allowed: true}
+  - {product: P01, text: "Vitamin D has a role in the process of cell division.", allowed: true}
+  - {product: P01, text: "Contains 25 µg vitamin D per drop, 500% of the reference intake.", allowed: true}
+  - {product: P03, text: "Vitamin D contributes to the maintenance of normal teeth.", allowed: true}
+  - {product: P03, text: "Helps little ones grow up strong.", allowed: false}
+  - {product: P04, text: "Vitamin D contributes to the maintenance of normal bones.", allowed: false}
+  - {product: P02, text: "Keeps calcium out of your arteries.", allowed: false}
+  - {product: P02, text: "Vitamin D contributes to normal blood calcium levels.", allowed: true}
+  - {product: P05, text: "Say goodbye to tiredness.", allowed: false}
+  - {product: P05, text: "Magnesium contributes to normal psychological function.", allowed: true}
+  - {product: P05, text: "Store below 25 °C and out of reach of children.", allowed: true}
+  - {product: P05, text: "Calms your nerves after a long day.", allowed: false}
+  - {product: P06, text: "Magnesium contributes to normal energy-yielding metabolism.", allowed: true}
+  - {product: P06, text: "Ideal after training to keep your muscles happy.", allowed: false}
+  - {product: P07, text: "Magnesium contributes to normal muscle function.", allowed: false}
+  - {product: P08, text: "Vitamin C contributes to maintain the normal function of the immune system during and after intense physical exercise.", allowed: true}
+  - {product: P08, text: "Vitamin C increases iron absorption.", allowed: true}
+  - {product: P09, text: "Vitamin C contributes to maintain the normal function of the immune system during and after intense physical exercise.", allowed: false}
+  - {product: P09, text: "Natural vitamin C from acerola cherries.", allowed: true}
+  - {product: P10, text: "Vitamin B12 contributes to normal red blood cell formation.", allowed: true}
+  - {product: P10, text: "B12 keeps your energy up all day.", allowed: false}
+  - {product: P11, text: "Vitamin B12 contributes to normal functioning of the nervous system.", allowed: true}
+  - {product: P12, text: "Iron contributes to normal cognitive function.", allowed: true}
+  - {product: P12, text: "Iron for women who feel exhausted.", allowed: false}
+  - {product: P13, text: "Zinc contributes to the maintenance of normal skin.", allowed: true}
+  - {product: P13, text: "Zinc and selenium contribute to the normal function of the immune system.", allowed: false}
+  - {product: P14, text: "A small daily zinc top-up.", allowed: true}
+  - {product: P14, text: "Zinc contributes to the maintenance of normal nails.", allowed: false}
+  - {product: P15, text: "Selenium contributes to the protection of cells from oxidative stress.", allowed: true}
+  - {product: P15, text: "Selenium for a happy thyroid.", allowed: false}
+  - {product: P16, text: "Biotin contributes to the maintenance of normal skin.", allowed: true}
+  - {product: P16, text: "Stops hair loss in weeks.", allowed: false}
+  - {product: P17, text: "Folate contributes to normal blood formation.", allowed: true}
+  - {product: P17, text: "Protects your baby from birth defects.", allowed: false}
+  - {product: P18, text: "Calcium contributes to normal muscle function.", allowed: true}
+  - {product: P19, text: "Supports a healthy metabolism.", allowed: false}
+  - {product: P20, text: "Vitamin K contributes to normal blood clotting.", allowed: true}
+  - {product: P20, text: "Vitamin K2 for bones and heart.", allowed: false}
+  - {product: P21, text: "DHA contributes to the maintenance of normal vision. The beneficial effect is obtained with a daily intake of 250 mg of DHA.", allowed: true}
+  - {product: P21, text: "EPA and DHA contribute to the normal function of the heart. The beneficial effect is obtained with a daily intake of 250 mg of EPA and DHA.", allowed: true}
+  - {product: P21, text: "DHA and EPA contribute to the maintenance of normal blood pressure. The beneficial effect is obtained with a daily intake of 3 g of EPA and DHA.", allowed: false}
+  - {product: P22, text: "DHA and EPA contribute to the maintenance of normal blood pressure. The beneficial effect is obtained with a daily intake of 3 g of EPA and DHA.", allowed: true}
+  - {product: P22, text: "EPA and DHA contribute to the normal function of the heart.", allowed: false}
+  - {product: P23, text: "DHA contributes to maintenance of normal brain function. The beneficial effect is obtained with a daily intake of 250 mg of DHA.", allowed: false}
+  - {product: P23, text: "Sourced from small fish caught in the North Atlantic.", allowed: true}
+  - {product: P24, text: "DHA and EPA contribute to the maintenance of normal blood triglyceride levels. The beneficial effect is obtained with a daily intake of 2 g of EPA and DHA.", allowed: false}
+  - {product: P24, text: "Clever kids love the orange taste.", allowed: true}
+  - {product: P25, text: "Magnesium contributes to a reduction of tiredness and fatigue.", allowed: true}
+  - {product: P25, text: "Calcium is needed for the maintenance of normal bones.", allowed: false}
+  - {product: P25, text: "Iron contributes to normal oxygen transport in the body.", allowed: true}
+  - {product: P25, text: "Covers your daily needs so you never get sick.", allowed: false}
+  - {product: P26, text: "Your shield for the cold season.", allowed: false}
+  - {product: P27, text: "Zinc and selenium contribute to the normal function of the immune system.", allowed: true}
+  - {product: P27, text: "Glow from within.", allowed: false}
+  - {product: P28, text: "Organic root powder, third-party tested.", allowed: true}
+  - {product: P28, text: "Find your inner balance and sleep deeply again.", allowed: false}
+  - {product: P29, text: "Golden milk for joints that move freely.", allowed: false}
+  - {product: P31, text: "Mild, golden chamomile blossoms.", allowed: true}
+  - {product: P32, text: "Cleanses your liver.", allowed: false}
+  - {product: P34, text: "Smooth skin and fewer wrinkles in 8 weeks.", allowed: false}
+  - {product: P34, text: "Vitamin C contributes to normal collagen formation for the normal function of cartilage.", allowed: true}
+  - {product: P35, text: "Lavender helps you fall asleep faster.", allowed: false}
+  - {product: P36, text: "Zinc contributes to normal protein synthesis.", allowed: true}
+  - {product: P37, text: "Vitamin C contributes to the protection of cells from oxidative stress.", allowed: true}
+  - {product: P38, text: "Iodine contributes to normal cognitive function.", allowed: true}
+  - {product: P38, text: "Everything mum and baby need.", allowed: false}
+  - {product: P39, text: "EPA and DHA contribute to the normal function of the heart. The beneficial effect is obtained with a daily intake of 250 mg of EPA and DHA.", allowed: true}
+  - {product: P40, text: "Sharpens memory and focus.", allowed: false}

@@ -1,0 +1,133 @@
+{
+ "vertex_spec": "pipelines/replenishment.yaml",
+ "vertex_spec_sha256": "e5c1d50dc6e37394",
+ "bigquery_sql": "pipelines/features.bigquery.sql",
+ "prefect_run": {
+  "orders": {
+   "rows": 35752,
+   "fingerprint": "7cdf157a8381eb8f"
+  },
+  "features": {
+   "rows": 35752,
+   "labelled": 23795
+  },
+  "train": {
+   "trained_on": 7445,
+   "data_fingerprint": "83ec479fb947366e"
+  },
+  "evaluate": {
+   "challenger": {
+    "n": 1549,
+    "mae_days": 8.161,
+    "within_7_days": 0.643,
+    "reminders_on_time": 0.3518,
+    "reminders_too_late": 0.0394
+   },
+   "rule": {
+    "n": 1549,
+    "mae_days": 11.246,
+    "within_7_days": 0.5629,
+    "reminders_on_time": 0.3241,
+    "reminders_too_late": 0.1679
+   }
+  },
+  "passed_gate": true
+ },
+ "prefect_seconds": 9.8,
+ "lineage": {
+  "nodes": [
+   {
+    "id": "register",
+    "kind": "source",
+    "label": "EU claim register (432/2012)",
+    "hash": "5155a1d604c9a48e"
+   },
+   {
+    "id": "catalogue",
+    "kind": "source",
+    "label": "Product catalogue",
+    "hash": "44c55fe0ba6bdb2c"
+   },
+   {
+    "id": "orders",
+    "kind": "dataset",
+    "label": "Orders (35,752 rows)",
+    "hash": "7cdf157a8381eb8f"
+   },
+   {
+    "id": "features",
+    "kind": "dataset",
+    "label": "Features (23,795 labelled)",
+    "hash": "6ab6d747cdf55932"
+   },
+   {
+    "id": "training_set",
+    "kind": "dataset",
+    "label": "Training set (7,445 rows)",
+    "hash": "83ec479fb947366e"
+   },
+   {
+    "id": "model",
+    "kind": "model",
+    "label": "Run-out model",
+    "hash": "85c748feced2ccad"
+   },
+   {
+    "id": "gate",
+    "kind": "check",
+    "label": "Gate: passed",
+    "hash": ""
+   },
+   {
+    "id": "claims_index",
+    "kind": "index",
+    "label": "Claims search index",
+    "hash": ""
+   },
+   {
+    "id": "checker",
+    "kind": "check",
+    "label": "Claim checker",
+    "hash": "9e284ddae1dee85f"
+   }
+  ],
+  "edges": [
+   [
+    "orders",
+    "features"
+   ],
+   [
+    "features",
+    "training_set"
+   ],
+   [
+    "training_set",
+    "model"
+   ],
+   [
+    "model",
+    "gate"
+   ],
+   [
+    "register",
+    "claims_index"
+   ],
+   [
+    "catalogue",
+    "claims_index"
+   ],
+   [
+    "register",
+    "checker"
+   ],
+   [
+    "catalogue",
+    "checker"
+   ],
+   [
+    "catalogue",
+    "orders"
+   ]
+  ]
+ }
+}
